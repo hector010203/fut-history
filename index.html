@@ -1,0 +1,175 @@
+<?php
+include "config.php";
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <title>Fut-History</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="logo-responsive"><img src="assets/logo-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarS"
+                aria-controls="navbarS"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleSticky()"
+                >
+            <span class="navbar-toggler-icon"></span> <!-- Dibuja el icono con 3 rayitas-->
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarS">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link enlaces">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jugadores.html" class="nav-link enlaces">Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dt.html" class="nav-link enlaces">DT</a>
+                <!-- </li>
+                    <a href="#" class="logo"><img src="assets/logo-1.png" alt=""></a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="estadios.html" class="nav-link enlaces">Estadios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipos.html" class="nav-link enlaces">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mundiales.html" class="nav-link enlaces">Mundiales</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <section class="banner">
+        <video muted autoplay loop>
+            <source src="assets/video inicio.mp4" type="video/mp4">
+        </video>
+    </section>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+        function toggleSticky() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky");
+        }
+	</script>
+
+    <main>
+        <div class="container-main">
+            <div class="introduccion-container">
+                <div class="textos-introduccion">
+                    <h1 class="maquina-escribir">Bienvenido a Fut-History</h1>
+                    <p>Sumérgete en la apasionante historia del fútbol a través de nuestra página. Desde jugadores legendarios hasta entrenadores visionarios, estadios emblemáticos, equipos destacados y momentos inolvidables de los Mundiales, en Fut-History encontrarás todo lo que necesitas para explorar y disfrutar del fascinante mundo del fútbol. Únete a nosotros en este emocionante viaje a través del tiempo y descubre el legado que ha convertido al fútbol en el deporte más amado del planeta.
+                    </p>
+                </div>
+            </div>
+            <div class="destacados">
+                <h1>Destacados</h1>
+                <!-- <div class="flex-destacados">
+                    <div class="item item-1">Item 1</div>
+                    <div class="item item-2">Item 2</div>
+                    <div class="item item-3">Item 3</div>
+                    <div class="item item-4">Item 4</div>
+                </div> -->
+                <div class="estadio-top destacados">
+                    <div class="flex-estadio flex-destacados">
+                        <div class="item item-1-jugadores">
+                            <img src="assets/j inicio.png" alt="zidane" class="image">
+                            <!-- <i class="fa-solid fa-chevrons-right fa-beat fa-2xl miBoton"></i> -->
+                            <div class="middle">
+                                <h1>Jugadores</h1>
+                                <a href="jugadores.html" class="text">Saber Mas</a>
+                            </div>
+                        </div>
+                        <div class="item item-2-dt">
+                            <img src="assets/dt inicio.png" alt="zidane" class="image">
+                            <div class="middle">
+                                <h1>DT</h1>
+                                <a href="dt.html" class="text">Saber Mas</a>
+                            </div>
+                        </div>
+                        <div class="item item-3-estadio">
+                            <img src="assets/e inicio.png" alt="zidane" class="image">
+                            <div class="middle">
+                                <h1>Estadios</h1>
+                                <a href="estadios.html" class="text">Saber Mas</a>
+                            </div>
+                        </div>
+                        <div class="item item-4-equipos">
+                            <img src="assets/eq inicio.png" alt="zidane" class="image">
+                            <div class="middle">
+                                <h1>Equipos</h1>
+                                <a href="equipos.html" class="text">Saber Mas</a>
+                            </div>
+                        </div>
+                        <div class="item item-5-mundiales">
+                            <img src="assets/m inicio.png" alt="zidane" class="image">
+                            <div class="middle">
+                                <h1>Mundiales</h1>
+                                <a href="mundiales.html" class="text">Saber Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="estadisticas">
+            <div class="goles-container">
+                <h3 class="goles">Goles</h3>
+                <div class="barra2">.</div>
+                <p>803</p>
+            </div>
+            <div class="asistencias-container">
+                <h3 class="asistencias">Asistencias</h3>
+                <div class="barra2">.</div>
+                <p>357</p>
+            </div>
+            <div class="asistencias-container">
+                <h3 class="asistencias">Partidos</h3>
+                <div class="barra2">.</div>
+                <p>1027</p>
+            </div>
+            <div class="asistencias-container">
+                <h3 class="asistencias">Titulos</h3>
+                <div class="barra2">.</div>
+                <p>42</p>
+            </div>
+            <div class="asistencias-container">
+                <h3 class="asistencias">Premios</h3>
+                <div class="barra2">.</div>
+                <p>53</p>
+            </div>
+        </div> -->
+    </main>
+    <footer>
+        <div class="siguenos-footer">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+        </div>
+    </footer>
+
+
+    <script src="js/cabecera.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

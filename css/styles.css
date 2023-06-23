@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+
+
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,175,153,1) 35%, rgba(0,212,255,1) 100%); */
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(158,175,153,1) 100%, rgba(0,212,255,1) 100%);
+    color: white !important;
+}
+
+h1, h2{
+    font-size: 80px !important;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-weight: bold !important;
+    /* color: #27D52A !important; */
+    /* color: white !important; */
+}
+
+p{
+    font-size: 20px;
+}
+
+/* main{
+    display: flex;
+    justify-content: center;
+} */
+
+/* ********************************************************************************* */
+/* HEADER STYLES */
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #1c1c1d;
+    opacity: .4;
+    /* mix-blend-mode: overlay; */
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .paginas-header{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+header a{
+    font-size: 30px !important;
+    margin-right: 3rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+
+header .enlaces:hover{
+    /* text-decoration: underline;
+    color: wheat; */
+    color: #1a1717 !important;
+    background-color: white;
+}
+
+/* ************************************************************************** */
+/* FOOTER STYLES */
+footer{
+    position: relative;
+    height: 100px;
+    background-color: #011ea0;
+    width: 100%;
+}
+
+.siguenos-footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 40px;
+}
+
+.siguenos-footer i{
+    margin-right: 10px;
+}
+
+.siguenos-footer i:hover{
+    cursor: pointer;
+}
+
+
+/* ***************************************************************************************** */
+/*                                          INDEX STYLES                                     */
+
+
+/* INTRODUCCION STYLES */
+.introduccion-container{
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px;
+}
+
+.introduccion-container .textos-introduccion{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+/* 
+.introduccion-container .maquina-escribir{
+    position: relative;
+    white-space: nowrap;
+}
+.introduccion-container span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(158,175,153,1) 100%, rgba(0,212,255,1) 100%);
+    border-left: 1px solid #000;
+
+    animation: maquina 5s infinite alternate steps(30);
+}
+
+@keyframes maquina {
+    from { width: 100%;}
+    to{
+        width: 0;
+    }
+} */
+
+
+/* DESTACADOS */
+.destacados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.flex-destacados{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ***************************************************************************************************** */
+/* ************************************************************************************** */
+/* ***************************************************************** */
+/* *********************************************** */
+/* ************************************** */
+
+.flex-destacados .item{
+    width: 50%;
+    /* padding-right: 200px; */
+    /* background-color: #004d7a; */
+}
+/* *********************************************************************************************************** */
+/*                                          PAGINA JUGADORES STYLES                                            */
+
+/* TOP JUGADORES */
+
+.jugadores-top,
+.dt-top,
+.estadio-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.flex-jugadores,
+.flex-dt,
+.flex-estadio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.flex-jugadores .item,
+.flex-dt .item,
+.flex-equipos .item{
+    /* background-color: #1a1717; */
+    /* border: thin solid blue;
+    color: white; */
+    width: 40%;
+}
+
+.equipos h1{
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.item{
+    position: relative;
+}
+
+.item .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+ .item .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.item:hover .image {
+    opacity: 0.3;
+}
+
+.item:hover .middle {
+    opacity: 1;
+}
+
+.item .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.item .middle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.item-4 .middle p,
+.item-5 .middle p,
+.item-6 .middle p,
+.item-8 .middle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.item{
+    margin: 5px;
+}
+
+.flex-dt .item-1 p,
+.flex-dt .item-2 p,
+.flex-dt .item-3 p,
+.flex-dt .item-7 p,
+.flex-dt .item-9 p,
+.flex-dt .item-10 p{
+    transform: translate(-50%, 40%);
+
+}
+
+.flex-estadio .item{
+    width: 70%;
+}
+
+
+/* RECORDS */
+
+.records,
+.records-dt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.records p,
+.records-dt p{
+    width: 50%;
+    text-align:center;
+}
+
+.flex-records,
+.flex-records-dt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.record .item,
+.record-dt .item{
+    /* background-color: #1a1717; */
+    /* border: thin solid blue;
+    color: white; */
+    width: 40%;
+}
+
+.record-item,
+.record-item-dt{
+    position: relative;
+}
+
+.record-item .image,
+.record-item-dt .image  {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .record-item .middle,
+  .record-item-dt .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 100%; /* Establece el límite de altura del contenedor de texto */
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.record-item .middle p,
+.record-item-dt .middle p{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+  
+
+.record-item:hover .image,
+.record-item-dt:hover .image  {
+    opacity: 0.3;
+}
+
+.record-item:hover .middle,
+.record-item-dt:hover .middle  {
+    opacity: 1;
+}
+
+.record-item .text,
+.record-item-dt .text  {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 0px 50px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.item-2 .middle h1{
+    position: relative;
+    left: 150px;
+}
+
+/* 
+.record-item .middle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1717;
+    overflow: scroll;
+} */
+
+.record-item .middle p,
+.record-item-dt .middle p{
+    font-size: 20px;
+}
+
+.record-item,
+.record-item-dt{
+    margin: 5px;
+}
+
+
+/* EQUIPOS */
+.equipos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.equipos .logo-liga{
+    height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* GALERIA IMAGENES */
+.galeria-img-equipos{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    
+}
+
+.galeria-img-equipos img{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    
+}
+/* 
+.galeria-img-equipos img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+} */
+
+
+
+/* GALERIA IMAGENES */
+.galeria-img{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.galeria-img img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria-img img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.libros-dt h1, p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.libros-dt p{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* MUNDIALES */
+
+.records-mundial{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.records-mundial .barra-records{
+    background-color: blue;
+    width: 70%;
+    height: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    /* border: thick solid #1a1717; */
+    display: inline-block;
+}
+
+.records-mundial .records-colectivos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #4CAF50; */
+    margin-bottom: 50px;
+}
+
+.records-mundial .info-records-colectivos{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    /* width: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.records-mundial .info-records-colectivos span{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.cuadros-records{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.cuadros-records .colectivos,
+.cuadros-records .individuales{
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    background-color: #1a1717;
+}
+
+.cuadros-records .colectivos img,
+.cuadros-records .individuales img{
+    width: 100%;
+    opacity: .8;
+}
+
+.cuadros-records .colectivos p,
+.cuadros-records .individuales p{
+    position: absolute;
+    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.imagen:hover{
+    animation: fadeIn 1s ease;
+    /* background-color: black; */
+    /* filter: blur(5px); */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+}
+
+
+.flex-destacados .item{
+    width: 50%;
+    /* padding-right: 200px; */
+    /* transition: width 1s; */
+}
+
+.flex-destacados .item:hover{
+    /* width: 600px; */
+    /* background-color: #004d7a; */
+    z-index: 999;
+}
+
+.flex-premios .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.flex-premios .image{
+    opacity: 0.7;
+}
+/* 
+header .paginas-header{
+    background-color: #011ea0;
+} */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky{
+    /* padding: 5px 100px; */
+    /* padding-top: 50px; */
+    padding-bottom: 0px;
+    /* margin-bottom: -100px; */
+    background: #011ea0;
+}
+
+header .logo{
+    transition: 0.6s;
+}
+
+header img{
+    width: 130px;
+    height: 130px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: -50px; */
+    /* flex-wrap: wrap; */
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff !important;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 40px !important;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    /* color: #000; */
+    color: #fff !important;
+}
+
+header .container{
+    margin: 0;
+    /* width: 100%; */
+}
+
+header ul{
+    position: relative;
+    top: 0px;
+    margin-left: 60px;
+}
+
+
+/* 
+header .navbar-toggler{
+    background-color: gray;
+}
+
+
+header .navbar-toggler-icon{
+    background-color: gray;
+} */
+
+@media(min-width: 1000px){
+    header.sticky{
+        height: 120px;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px){
+
+    .flex-jugadores{
+        flex-direction: column;
+    }
+
+    .flex-destacados .item,
+    .flex-jugadores .item,
+    .flex-dt .item,
+    .flex-estadio .item{
+        width: 100%;
+    }
+
+    .flex-records,
+    .flex-records-dt{
+        width: 90%;
+    }
+
+    .flex-records .middle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    .introduccion-container .textos-introduccion h1,
+    .jugadores-top h1,
+    .dt-top h1,
+    .estadio-top h1{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduccion-container .textos-introduccion,
+    .records p,
+    .records-dt p,
+    .libros-dt p,
+    .records-mundial .texto-records p{
+        text-align: center;
+        width: 90%;
+    }
+
+    .txt-premier,
+    .txt-bundes,
+    .txt-serie-a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cuadros-records{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+    }
+
+    .cuadros-records .colectivos,
+    .cuadros-records .individuales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 180%;
+    }
+
+    
+    header ul{
+        margin-left: 0px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .flex-records .middle h1{
+        margin-top: 80px;
+        font-size: 30px !important;
+    }
+
+    .flex-records .item-1 .middle h1{
+        margin-top: 300px;
+    }
+
+    .flex-records .item-2 .middle h1{
+        margin-top: 300px;
+        position: relative;
+        left: 0;
+    }
+
+    .flex-records .item-1.mauri h1{
+        margin-top: 80px;
+    }
+
+    .flex-records .item-1.paco h1{
+        margin-top: 350px;
+    }
+
+    .equipos .carrusel-list{
+        width: 120%;
+        position: relative;
+        left: -20px;
+    }
+
+    .carousel-equipos {
+        width: 100%; /* Ajusta el ancho del contenedor principal según tus necesidades */
+      }
+      
+      .carousel-container {
+        width: 70%; /* Ajusta el ancho del carrusel según tus necesidades */
+      }
+
+    .flex-premios .middle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 1;
+    }
+
+    .flex-premios .middle h1{
+        margin-top: 0;
+    }
+
+    .flex-premios .image{
+        opacity: 0.7;
+    }
+
+    .logo{
+        position: relative;
+        left: -110px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {   
+    /* header ul li a{
+        position: relative;
+        margin: 0 2px;
+        text-decoration: none;
+        color: #fff !important;
+        letter-spacing: 1px;
+        font-weight: 500px;
+        transition: 0.6s;
+        font-size: 30px !important;
+    } */
+  }
+  
+
+/* ALERTAS */
+
+.contenedor-modal{
+    height: 400px;
+}
+.my-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+.my-alert-2{
+    display: flex;
+}
+
+.my-alert-2 .contenido-modal{
+    width: 100%;
+}
+
+
+.my-alert-2 .contenido-modal .trayectoria{
+    position: relative;
+    left: 50%;
+    width: 30%;
+}
+  .image-container {
+    margin-top: 20px;
+    width: 30%;
+  }
+  
+  .image-container img ,
+  .image-container-dt img ,
+  .image-container-estadio img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .contenido-modal {
+    width: 60%; /* Ajusta el ancho del contenido según tus necesidades */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contenido-modal h2{
+    font-size: 40px !important;
+  }
+.contenido-modal h2:not(.nombre),
+.contenido-modal p {
+    position: relative;
+    left: 0;   
+}
+.estadisticas .goles{
+    display: inline-block;
+}
+
+.estadisticas .asistencias{
+    display: inline-block;
+}
+.estadisticas .barra2{
+    background-color: #48b34c;
+    border-radius: 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+.estadisticas p{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.estadisticas h3{
+    margin-right: 20px;
+}
+
+.my-alert .pele{
+    height: 20%;
+}
+
+.swal-backdrop {
+    background-color: rgba(0, 0, 1, 0.9) !important;
+    opacity: 0.3;
+  }
+
+.my-alert-estadios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.image-container-estadio{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.my-alert-estadios .contenido-modal{
+    width: 90%;
+}
+  
+
+  /* Estilos adicionales para adaptarse a responsive */
+  @media (max-width: 768px) {
+    .my-alert {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 50%;
+      margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+    }
+  
+    .contenido-modal {
+      width: 100%;
+    }
+  }
+
+  /* MODALES */
+
+  .plantilla-laliga{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .plantilla-laliga img{
+    border-radius: 10px;
+  }
+
+  .plantilla-laliga .item{
+    width: 60%;
+  }
+
+.plantilla-laliga .middle button{
+    padding: 7px;
+}
+
+.image-container-estadio{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.image-container-estadio img{
+    width: 100%;
+    height: auto;
+}
+
+.partidos-mundial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1d;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.partidos-mundial img{
+    width: 50px;
+    height: 30px;
+
+}
+
+.partidos-mundial h2{
+    margin: 0 20px;
+    font-size: 25px !important;
+}
+
+.partidos-mundial .marcador{
+    font-size: 30px !important;
+}
+
+.fecha-mundial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px !important;
+}
+
+.flex-destacados a{
+    text-decoration: none;
+}
+
+
+.flex-destacados h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.item-1-jugadores .middle,
+.item-2-dt .middle,
+.item-3-estadio .middle,
+.item-4-equipos .middle,
+.item-5-mundiales .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ 
+.introduccion-container .textos-introduccion h1{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* white-space: nowrap; */
+    /* border-right: 4px solid; */
+    /* width: 25ch; */
+    
+    animation: typing 4s steps(26) infinite alternate,
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+/*
+@keyframes typing {
+    from { width: 0;}
+}
+
+@keyframes blink{
+    50% { border-color: transparent; }
+}
+
+@media (max-width: 768px){
+    .introduccion-container .textos-introduccion h1{
+        white-space: pre;
+    }
+} */

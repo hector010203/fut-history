@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Fut-History</title>
+</head>
+<body>
+    <!-- <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="jugadores.html">Jugadores</a></li>
+            <li><a href="dt.html">DT</a></li>
+            <li><a href="estadios.html">Estadios</a></li>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="mundiales.html">Mundiales</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <video muted autoplay loop>
+            <source src="assets/video inicio.mp4" type="video/mp4">
+        </video>
+    </section>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+	</script> -->
+
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="logo-responsive"><img src="assets/logo-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarS"
+                aria-controls="navbarS"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleSticky()"
+                >
+            <span class="navbar-toggler-icon"></span> <!-- Dibuja el icono con 3 rayitas-->
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarS">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link enlaces">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jugadores.html" class="nav-link enlaces">Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dt.html" class="nav-link enlaces">DT</a>
+                <!-- </li>
+                    <a href="#" class="logo"><img src="assets/logo-1.png" alt=""></a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="estadios.html" class="nav-link enlaces">Estadios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipos.html" class="nav-link enlaces">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mundiales.html" class="nav-link enlaces">Mundiales</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <section class="banner">
+        <video muted autoplay loop>
+            <source src="assets/video jugadores.mp4" type="video/mp4">
+        </video>
+    </section>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+        function toggleSticky() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky");
+        }
+	</script>
+
+    <main>
+        <div class="container-main">
+            <div class="introduccion-container">
+                <div class="textos-introduccion">
+                    <h1>Jugadores</h1>
+                    <p>Explora la galería de jugadores extraordinarios en Fut-History. Desde leyendas históricas hasta talentos contemporáneos, sumérgete en perfiles detallados que destacan las habilidades, logros y momentos inolvidables de estos futbolistas icónicos. Descubre el legado y la influencia que han dejado en el deporte, y maravíllate con su magia en el terreno de juego. Acompáñanos mientras rendimos homenaje a los héroes del fútbol que han encendido la pasión de millones de fanáticos en todo el mundo.
+                    </p>
+                </div>
+            </div>
+            <!-- JUGADORES TOP SECCION -->
+            <div class="jugadores-top">
+                <h1>Top 10 Historico</h1>
+                <div class="flex-jugadores">
+                    <div class="item item-1">
+                        <img src="assets/top-10/messi.webp" alt="Messi" class="image">
+                        <div class="middle">
+                            <button class="text" id="messi">Saber Mas</button>
+                            <p>Messi</p>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <img src="assets/top-10/maradona.jpg" alt="Maradona" class="image">
+                        <div class="middle">
+                            <button class="text" id="maradona">Saber Mas</button>
+                            <p>Maradona</p>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <img src="assets/top-10/pele.webp" alt="Pele" class="image">
+                        <div class="middle">
+                            <button class="text" id="pele">Saber Mas</button>
+                            <p>Pele</p>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <img src="assets/top-10/cristiano ronaldo.webp" alt="Cristiano Ronaldo" class="image">
+                        <div class="middle">
+                            <button class="text" id="cristiano">Saber Mas</button>
+                            <p>Cristiano Ronaldo</p>
+                        </div>
+                    </div>
+                    <div class="item item-5">
+                        <img src="assets/top-10/di estefano.webp" alt="Di Estefano" class="image">
+                        <div class="middle">
+                            <button class="text" id="di estefano">Saber Mas</button>
+                            <p>Di Estefano</p>
+                        </div>
+                    </div>
+                    <div class="item item-6">
+                        <img src="assets/top-10/cruyff.jpg" alt="Johan Cruyff" class="image">
+                        <div class="middle">
+                            <button class="text" id="cruyff">Saber Mas</button>
+                            <p>johan Cruyff</p>
+                        </div>
+                    </div>
+                    <div class="item item-7">
+                        <img src="assets/top-10/beckenbauer.webp" alt="Beckenbauer" class="image">
+                        <div class="middle">
+                            <button class="text" id="beckenbauer">Saber Mas</button>
+                            <p>Beckenbauer</p>
+                        </div>
+                    </div>
+                    <div class="item item-8">
+                        <img src="assets/top-10/nazario.webp" alt="Ronaldo Nazario" class="image">
+                        <div class="middle">
+                            <button class="text" id="nazario">Saber Mas</button>
+                            <p>Ronaldo Nazario</p>
+                        </div>
+                    </div>
+                    <div class="item item-9">
+                        <img src="assets/zidane.jpg" alt="zidane" class="image">
+                        <div class="middle">
+                            <button class="text" id="zidane">Saber Mas</button>
+                            <p>Zidane</p>
+                        </div>
+                    </div>
+                    <div class="item item-10">
+                        <img src="assets/top-10/ronaldinho.webp" alt="ronaldinho" class="image">
+                        <div class="middle">
+                            <button class="text" id="ronaldinho">Saber Mas</button>
+                            <p>Ronaldinho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECORDS SECCION -->
+            <div class="records">
+                <h1>Records</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate molestias veritatis beatae, voluptates distinctio eligendi, esse, eveniet impedit debitis nesciunt nisi possimus eaque cum nam hic! Qui inventore quisquam perferendis.</p>
+                <div class="flex-records">
+                    <div class="record-item item-1">
+                        <img src="assets/messi record.webp" alt="Messi Record" class="image">
+                        <div class="middle">
+                            <h1>Mas Goles en un año</h1>
+                            <p class="ambos">A nivel individual, 2012 fue el gran año de Messi. El astro argentino acumuló a lo largo de esos 365 días la friolera de 91 goles. Una auténtica barbaridad que parece hoy día insuperable, el Argentino hizo 91 goles -en 69 partidos- (2012) con un total de 79 goles en su club (59 en Primera División de España, 13 en la Liga de Campeones de la UEFA, 5 en la Copa del Rey, 2 en la Supercopa de España), y 12 goles en su selección nacional.</p>
+                                <button class="text">Ver Video</button>
+                        </div>
+                    </div>
+                    <div class="record-item item-2">
+                        <img src="assets/cristiano record.webp" alt="Cristiano Ronaldo Record" class="image">
+                        <div class="middle">
+                            <h1>Maximo goleador Internacional</h1>
+                            <p>Cristiano Ronaldo tiene un récord mundial de 122 goles desde que debutó con Portugal en 2003. También es el jugador que más partidos ha disputado en la historia del fútbol internacional masculino, con 198 encuentros, un récord que compartía con el kuwaití Bader Al-Mutawa. hasta que lo superó el 23 de marzo de 2023 contra Liechtenstein, noche en la que hizo dos goles.                            </p>
+                            <button class="text">Ver Video</button>
+                        </div>
+                    </div>
+                    <div class="record-item item-3">
+                        <img src="assets/mazaropi record.jpeg" alt="Mazaropi record" class="image">
+                        <div class="middle">
+                            <h1>Mayor racha</h1>
+                            <p>Geraldo Pereira de Matos Filho ‘Mazarópi’, jugador del Vasco de Gama, fue el guardameta que logró el récord mundial de imbatibilidad. Estuvo un total de 1816 minutos sin encajar ningún gol.</p>
+                            <button class="text">Ver Video</button>
+                        </div>
+                    </div>
+                    <div class="record-item item-1 mauri">
+                        <img src="assets/mauricio-baldivieso.jpg" alt="Mauricio Baldiavieso" class="image">
+                        <div class="middle">
+                            <h1>El jugador mas <br> joven en debutar</h1>
+                            <p>Con sólo 12 años, Pablo Mauricio Baldivieso Ferrufino se convirtió en el jugador más joven en debutar en la primera división del fútbol boliviano, y quizás a nivel mundial.</p>
+                            <button class="text">Ver Video</button>
+                        </div>
+                    </div>
+                    <div class="record-item item-1 paco">
+                        <img src="assets/paco gento record.jpg" alt="Paco Gento" class="image">
+                        <div class="middle">
+                            <h1>El jugador con <br> mas Champions</h1>
+                            <p> Seis Copas de Europa ganó el cántabro con el Real Madrid entre 1956 y 1966, que pudieron incluso ser alguna más. Las plusmarcas están para romperse, y hay quien aspira a ello (Cristiano Ronaldo, que suma cinco Champions), pero nadie podrá arrebatar al presidente de honor del Real Madrid la etiqueta del pionero, el privilegio de ser el primer hombre que piso un territorio que, hasta la fecha, sigue inexplorado por el resto de sus semejantes.</p>
+                            <button class="text">Ver Video</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info-footer">
+            <div class="siguenos-footer">
+                <i class="bi bi-4-circle-fill"></i>
+                <i class="bi bi-3-circle-fill"></i>
+                <i class="bi bi-4-circle-fill"></i>
+            </div>
+            <div class="enlaces-footer">
+                <a href="#">djns</a>
+                <a href="#">dkmasm</a>
+                <a href="#">jdaks</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/modales.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-carousel.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Fut-History</title>
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="logo-responsive"><img src="assets/logo-1.png" alt=""></a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarS"
+                aria-controls="navbarS"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onclick="toggleSticky()"
+                >
+            <span class="navbar-toggler-icon"></span> <!-- Dibuja el icono con 3 rayitas-->
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarS">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link enlaces">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jugadores.html" class="nav-link enlaces">Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dt.html" class="nav-link enlaces">DT</a>
+                <!-- </li>
+                    <a href="#" class="logo"><img src="assets/logo-1.png" alt=""></a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="estadios.html" class="nav-link enlaces">Estadios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipos.html" class="nav-link enlaces">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mundiales.html" class="nav-link enlaces">Mundiales</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <section class="banner">
+        <video muted autoplay loop>
+            <source src="assets/equipos video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY>0);
+		})
+        function toggleSticky() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky");
+        }
+	</script>
+
+    <main>
+        <div class="container-main">
+            <div class="introduccion-container">
+                <div class="textos-introduccion">
+                    <h1>Equipos</h1>
+                    <p>Sumérgete en la fascinante historia de los equipos más destacados en Fut-History. Desde clubes legendarios hasta equipos nacionales de renombre, te invitamos a explorar la rica trayectoria y los logros de estas instituciones deportivas. Descubre los éxitos, las rivalidades históricas y los momentos emblemáticos que han definido la grandeza de cada equipo. Explora sus plantillas estelares, sus títulos y el legado que han dejado en el mundo del fútbol. Acompáñanos mientras rendimos homenaje a los equipos que han dejado una huella imborrable y han cautivado a millones de aficionados en todo el mundo. ¡En Fut-History, celebramos la pasión y la grandeza de los equipos que han marcado la historia del fútbol!
+                    </p>
+                </div>
+            </div>
+            <!-- JUGADORES TOP SECCION -->
+            <div class="equipos">
+                <h1><img src="assets/laliga.png" class="logo-liga"></img> La Liga</h1>
+                <div class="carousel-equipos carousel-container">
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="carrusel-track" id="track">
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="bilbao">
+                                        <picture>
+                                            <img src="assets/la liga/Athletic-club.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="atletico">
+                                        <picture>
+                                            <img src="assets/la liga/Atletico.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="osasuna">
+                                        <picture>
+                                            <img src="assets/la liga/Osasuna.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="cadiz">
+                                        <picture>
+                                            <img src="assets/la liga/Cadiz.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="elche">
+                                        <picture>
+                                            <img src="assets/la liga/Elche.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="barcelona">
+                                        <picture>
+                                            <img src="assets/la liga/Barcelona.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="getafe">
+                                        <picture>
+                                            <img src="assets/la liga/Getafe.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="girona">
+                                        <picture>
+                                            <img src="assets/la liga/Girona.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="rayo">
+                                        <picture>
+                                            <img src="assets/la liga/Rayo.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="celta">
+                                        <picture>
+                                            <img src="assets/la liga/Celta-contorno-blanco.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="espanyol">
+                                        <picture>
+                                            <img src="assets/la liga/Espanyol.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="mallorca">
+                                        <picture>
+                                            <img src="assets/la liga/Mallorca.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="betis">
+                                        <picture>
+                                            <img src="assets/la liga/Betis.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="real-madrid">
+                                        <picture>
+                                            <img src="assets/la liga/Real-madrid.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="real-sociedad">
+                                        <picture>
+                                            <img src="assets/la liga/Real-sociedad.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="valladolid">
+                                        <picture>
+                                            <img src="assets/la liga/Valladolid.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="sevilla">
+                                        <picture>
+                                            <img src="assets/la liga/Sevilla.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="almeria">
+                                        <picture>
+                                            <img src="assets/la liga/almeria.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="valencia">
+                                        <picture>
+                                            <img src="assets/la liga/Valencia.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="villarreal">
+                                        <picture>
+                                            <img src="assets/la liga/Villarreal.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h1 class="txt-premier"><img src="assets/premier.png" class="logo-liga"></img> Premier League</h1>
+                <div class="carousel-equipos">
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="carrusel-track" id="track">
+                            <div class="carrusel-track" id="track">
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="bournemouth">
+                                            <picture>
+                                                <img src="assets/premier/Bournemouth_Crest_Comp_180x1801550138851194.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="arsenal">
+                                            <picture>
+                                                <img src="assets/premier/Arsenal_Crest_Comp_180x1801549549037942.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="aston-villa">
+                                            <picture>
+                                                <img src="assets/premier/Aston_Villa_Crest_Comp_180x1801549971248164.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="brentford">
+                                            <picture>
+                                                <img src="assets/premier/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="brighton">
+                                            <picture>
+                                                <img src="assets/premier/Brighton_and_Hove_Albion_Crest_Comp_180x1801550139308582.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="chelsea">
+                                            <picture>
+                                                <img src="assets/premier/Chelsea_Crest_Comp_180x1801550141382168.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Agrega los siguientes equipos siguiendo el mismo patrón -->
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="crystal-palace">
+                                            <picture>
+                                                <img src="assets/premier/Crystal_Palace_Crest_Comp_180x1801659968262919.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="everton">
+                                            <picture>
+                                                <img src="assets/premier/Everton_Crest_Comp_180x1801550158812653.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="fulham">
+                                            <picture>
+                                                <img src="assets/premier/Fulham_Crest_Comp_180x1801550567888147.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="leeds-united">
+                                            <picture>
+                                                <img src="assets/premier/Leeds_United_Crest_Comp_180x1801550570237737.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="leicester">
+                                            <picture>
+                                                <img src="assets/premier/Leicester_City_Crest_Comp_180x1801550570305056.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="liverpool">
+                                            <picture>
+                                                <img src="assets/premier/Liverpool_Crest_Comp_180x1801550570408320.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="man-city">
+                                            <picture>
+                                                <img src="assets/premier/Manchester_City1505486069132.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="man-united">
+                                            <picture>
+                                                <img src="assets/premier/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="newcastle">
+                                            <picture>
+                                                <img src="assets/premier/Newcastle_United_Crest_Comp_180x1801550136308485.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="nottinham">
+                                            <picture>
+                                                <img src="assets/premier/Nottingham_Forest_Crest_Comp_180x1801658493274417.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="southampton">
+                                            <picture>
+                                                <img src="assets/premier/Southampton_Crest_Comp_180x1801550143313525.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="spurs">
+                                            <picture>
+                                                <img src="assets/premier/Tottenham_Hotspur_Crest_Comp_180x1801550155045146.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="westham">
+                                            <picture>
+                                                <img src="assets/premier/West_Ham_United_Crest_Comp_180x1801550155546987.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carrusel">
+                                    <div>
+                                        <a href="#" id="wolverhampton">
+                                            <picture>
+                                                <img src="assets/premier/Wolverhampton_Wanderers_Crest_Comp_180x1801550155723606.png" alt="imagen">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h1 class="txt-bundes"><img src="assets/bundes.png" class="logo-liga"></img> Bundesliga</h1>
+                <div class="carousel-equipos">
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="carrusel-track" id="track">
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="bayern">
+                                        <picture>
+                                            <img src="assets/bundes/bayern.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="leipzig">
+                                        <picture>
+                                            <img src="assets/bundes/leipzig.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="dortmund">
+                                        <picture>
+                                            <img src="assets/bundes/Borussia_Dortmund.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="wolfsburg">
+                                        <picture>
+                                            <img src="assets/bundes/wolfsburg.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="frankfurt">
+                                        <picture>
+                                            <img src="assets/bundes/frankfurt.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="leverkusen">
+                                        <picture>
+                                            <img src="assets/bundes/bayer-04-Leverkusen.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="union-berlin">
+                                        <picture>
+                                            <img src="assets/bundes/union-berlin.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="gladbach">
+                                        <picture>
+                                            <img src="assets/bundes/gladbach.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="stuttgart">
+                                        <picture>
+                                            <img src="assets/bundes/VfB_Stuttgart_1893.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="freiburg">
+                                        <picture>
+                                            <img src="assets/bundes/freiburg.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="hoffenheim">
+                                        <picture>
+                                            <img src="assets/bundes/hoffenheim.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="mainz">
+                                        <picture>
+                                            <img src="assets/bundes/FSV_Mainz_05.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="augsburg">
+                                        <picture>
+                                            <img src="assets/bundes/augsburg.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="hertha">
+                                        <picture>
+                                            <img src="assets/bundes/hertha.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="schalke">
+                                        <picture>
+                                            <img src="assets/bundes/schalke.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="koln">
+                                        <picture>
+                                            <img src="assets/bundes/1-fc-koln.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="bochum">
+                                        <picture>
+                                            <img src="assets/bundes/VfL_Bochum.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="bremen">
+                                        <picture>
+                                            <img src="assets/bundes/bremen.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                        
+                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h1 class="txt-serie-a"><img src="assets/serie a.png" class="logo-liga"></img>Serie A</h1>
+                <div class="carousel-equipos">
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="carrusel-track" id="track">
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="atalanta">
+                                        <picture>
+                                            <img src="assets/serie a/atalanta.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="milan">
+                                        <picture>
+                                            <img src="assets/serie a/milan.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="cremonese">
+                                        <picture>
+                                            <img src="assets/serie a/Cremonese.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="empoli">
+                                        <picture>
+                                            <img src="assets/serie a/empoli.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="fiorentina">
+                                        <picture>
+                                            <img src="assets/serie a/fiorentina.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="hellas-verona">
+                                        <picture>
+                                            <img src="assets/serie a/Hellas Verona.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="inter">
+                                        <picture>
+                                            <img src="assets/serie a/inter.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="juventus">
+                                        <picture>
+                                            <img src="assets/serie a/juventus.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="lazio">
+                                        <picture>
+                                            <img src="assets/serie a/lazio.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="lecce">
+                                        <picture>
+                                            <img src="assets/serie a/lecce.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="monza">
+                                        <picture>
+                                            <img src="assets/serie a/monza.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="napoli">
+                                        <picture>
+                                            <img src="assets/serie a/napoli.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="roma">
+                                        <picture>
+                                            <img src="assets/serie a/roma.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="salernitana">
+                                        <picture>
+                                            <img src="assets/serie a/salernitana.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="sampdoria">
+                                        <picture>
+                                            <img src="assets/serie a/sampdoria.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="sassuolo">
+                                        <picture>
+                                            <img src="assets/serie a/saussolo.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="spezia">
+                                        <picture>
+                                            <img src="assets/serie a/spezia.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="torino">
+                                        <picture>
+                                            <img src="assets/serie a/torino.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#" id="udinese">
+                                        <picture>
+                                            <img src="assets/serie a/udinesse.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h1><img src="assets/ligue 1.png" class="logo-liga"></img>Ligue 1</h1>
+                <div class="carousel-equipos">
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                                class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="carrusel-track" id="track">
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/ajaccio.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/auxerre.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/angers.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/monaco.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/clermont.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/troyes.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/lorient.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/nantes.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/lille.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/montpellier.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/ogc.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/olympique_de_marseille.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/olympique.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/psg.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/lens.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/rcstrasbourg.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/stade brestois.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/stade-de-reims.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/stade-reinais.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carrusel">
+                                <div>
+                                    <a href="#">
+                                        <picture>
+                                            <img src="assets/ligue 1/toulousse.png" alt="imagen">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                            onclick="app.processingButton(event)">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="info-footer">
+            <div class="siguenos-footer">
+                <i class="bi bi-4-circle-fill"></i>
+                <i class="bi bi-3-circle-fill"></i>
+                <i class="bi bi-4-circle-fill"></i>
+            </div>
+            <div class="enlaces-footer">
+                <a href="#">djns</a>
+                <a href="#">dkmasm</a>
+                <a href="#">jdaks</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js" ></script>
+    <script src="js/modales-equipos-laliga.js"></script>
+    <script src="js/modales-equipo-premier.js"></script>
+    <script src="js/modales-bundes.js"></script>
+    <script src="js/modales-serieA.js"></script>
+    <script src="js/modales-ligue1.js  "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
