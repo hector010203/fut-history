@@ -27,7 +27,7 @@
             </button>
 
         <div class="collapse navbar-collapse" id="navbarS">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 scroll-animation">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link enlaces">Inicio</a>
                 </li>
@@ -72,15 +72,15 @@
         <div class="container-main">
             <div class="introduccion-container">
                 <div class="textos-introduccion">
-                    <h1>Equipos</h1>
-                    <p>Sumérgete en la fascinante historia de los equipos más destacados en Fut-History. Desde clubes legendarios hasta equipos nacionales de renombre, te invitamos a explorar la rica trayectoria y los logros de estas instituciones deportivas. Descubre los éxitos, las rivalidades históricas y los momentos emblemáticos que han definido la grandeza de cada equipo. Explora sus plantillas estelares, sus títulos y el legado que han dejado en el mundo del fútbol. Acompáñanos mientras rendimos homenaje a los equipos que han dejado una huella imborrable y han cautivado a millones de aficionados en todo el mundo. ¡En Fut-History, celebramos la pasión y la grandeza de los equipos que han marcado la historia del fútbol!
+                    <h1 class="scroll-animation">Equipos</h1>
+                    <p class="scroll-animation">Sumérgete en la fascinante historia de los equipos más destacados en Fut-History. Desde clubes legendarios hasta equipos nacionales de renombre, te invitamos a explorar la rica trayectoria y los logros de estas instituciones deportivas. Descubre los éxitos, las rivalidades históricas y los momentos emblemáticos que han definido la grandeza de cada equipo. Explora sus plantillas estelares, sus títulos y el legado que han dejado en el mundo del fútbol. Acompáñanos mientras rendimos homenaje a los equipos que han dejado una huella imborrable y han cautivado a millones de aficionados en todo el mundo. ¡En Fut-History, celebramos la pasión y la grandeza de los equipos que han marcado la historia del fútbol!
                     </p>
                 </div>
             </div>
             <!-- JUGADORES TOP SECCION -->
-            <div class="equipos">
-                <h1><img src="assets/laliga.png" class="logo-liga"></img> La Liga</h1>
-                <div class="carousel-equipos carousel-container">
+            <div class="equipos scroll-animation">
+                <h1 class="scroll-animation"><img src="assets/laliga.png" class="logo-liga"></img> La Liga</h1>
+                <div class="carousel-equipos carousel-container scroll-animation">
                     <div class="carrusel-list" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
@@ -287,8 +287,8 @@
                         </button>
                     </div>
                 </div>
-                <h1 class="txt-premier"><img src="assets/premier.png" class="logo-liga"></img> Premier League</h1>
-                <div class="carousel-equipos">
+                <h1 class="txt-premier scroll-animation"><img src="assets/premier.png" class="logo-liga"></img> Premier League</h1>
+                <div class="carousel-equipos scroll-animation">
                     <div class="carrusel-list" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
@@ -498,8 +498,8 @@
                         </button>
                     </div>
                 </div>
-                <h1 class="txt-bundes"><img src="assets/bundes.png" class="logo-liga"></img> Bundesliga</h1>
-                <div class="carousel-equipos">
+                <h1 class="txt-bundes scroll-animation"><img src="assets/bundes.png" class="logo-liga"></img> Bundesliga</h1>
+                <div class="carousel-equipos scroll-animation">
                     <div class="carrusel-list" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
@@ -687,8 +687,8 @@
                         </button>
                     </div>
                 </div>
-                <h1 class="txt-serie-a"><img src="assets/serie a.png" class="logo-liga"></img>Serie A</h1>
-                <div class="carousel-equipos">
+                <h1 class="txt-serie-a scroll-animation"><img src="assets/serie a.png" class="logo-liga"></img>Serie A</h1>
+                <div class="carousel-equipos scroll-animation">
                     <div class="carrusel-list" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
@@ -886,8 +886,8 @@
                         </button>
                     </div>
                 </div>
-                <h1><img src="assets/ligue 1.png" class="logo-liga"></img>Ligue 1</h1>
-                <div class="carousel-equipos">
+                <h1 class="scroll-animation"><img src="assets/ligue 1.png" class="logo-liga"></img>Ligue 1</h1>
+                <div class="carousel-equipos scroll-animation">
                     <div class="carrusel-list" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
@@ -1111,6 +1111,7 @@
         </div>
     </footer>
 
+    <script src="js/cabecera.js"></script>
     <script src="js/carousel.js" ></script>
     <script src="js/modales-equipos-laliga.js"></script>
     <script src="js/modales-equipo-premier.js"></script>

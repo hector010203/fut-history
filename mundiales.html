@@ -27,7 +27,7 @@
             </button>
 
         <div class="collapse navbar-collapse" id="navbarS">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 scroll-animation">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link enlaces">Inicio</a>
                 </li>
@@ -72,16 +72,16 @@
         <div class="container-main">
             <div class="introduccion-container">
                 <div class="textos-introduccion">
-                    <h1>Mundiales</h1>
-                    <p>Viaja a través de los momentos históricos del fútbol con nuestra sección dedicada a los Mundiales en Fut-History. Explora la emoción y la grandeza de los torneos más importantes del deporte rey. Revive las finales épicas, las actuaciones sobresalientes y los momentos icónicos que han dejado una huella imborrable en la historia de cada Copa del Mundo. Descubre las historias de los equipos y jugadores que han conquistado la gloria mundial, así como los países anfitriones que han acogido estos eventos deportivos de renombre. Acompáñanos en este apasionante viaje a través de los Mundiales y celebremos juntos la grandeza y el legado que han dejado en el fútbol internacional.
+                    <h1 class="scroll-animation">Mundiales</h1>
+                    <p class="scroll-animation">Viaja a través de los momentos históricos del fútbol con nuestra sección dedicada a los Mundiales en Fut-History. Explora la emoción y la grandeza de los torneos más importantes del deporte rey. Revive las finales épicas, las actuaciones sobresalientes y los momentos icónicos que han dejado una huella imborrable en la historia de cada Copa del Mundo. Descubre las historias de los equipos y jugadores que han conquistado la gloria mundial, así como los países anfitriones que han acogido estos eventos deportivos de renombre. Acompáñanos en este apasionante viaje a través de los Mundiales y celebremos juntos la grandeza y el legado que han dejado en el fútbol internacional.
                     </p>
                 </div>
             </div>
             <!-- JUGADORES TOP SECCION -->
-            <div class="equipos">
+            <div class="equipos mundiales scroll-animation">
                 <h1><img src="assets/copa.webp" class="logo-liga logo-mundial"></img> Mundiales</h1>
                 <div class="carousel-mundiales">
-                    <div class="carrusel-list" id="carrusel-list">
+                    <div class="carrusel-list scroll-animation" id="carrusel-list">
                         <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
                             onclick="app.processingButton(event)">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
@@ -94,210 +94,256 @@
                         </button>
                         <div class="carrusel-track" id="track">
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1930">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1930.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1930.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1930</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1934">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1934.webp" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1934.webp" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1934</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1938">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1938.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1938.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1938</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1942-1946">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1942-1946.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1942-1946.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1942-1946</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1950">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1950.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1950.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1950</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1954">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1954.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1954.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1954</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1958">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1958.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1958.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1958</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1962">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1962.webp" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1962.webp" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1962</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1966">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1966.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1966.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1966</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1970">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1970.jpeg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1970.jpeg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1970</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1974">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1974.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1974.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1974</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1978">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1978.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1978.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1978</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1982">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1982.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1982.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1982</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1986">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1986.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1986.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1986</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1990">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1990.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1990.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1990</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1994">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1994.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1994.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1994</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="1998">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 1998.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 1998.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>1998</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2002">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2002.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2002.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2002</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2006">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2006.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2006.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2006</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2010">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2010.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2010.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2010</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2014">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2014.jpg" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2014.jpg" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2014</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2018">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2018.webp" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2018.webp" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2018</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                             <div class="carrusel">
-                              <div>
-                                <a href="#" id="2022">
-                                  <picture>
-                                    <img src="assets/mundial/mundial 2022.webp" alt="imagen">
-                                  </picture>
-                                </a>
+                              <div class="item scroll-animation">
+                                <img src="assets/mundial/mundial 2022.webp" alt="imagen">
+                                <div class="fecha-mundial">
+                                  <h1>2022</h1>
+                                </div>
+                                <div class="middle">
+                                    <button class="text" id="1930">Saber Mas</button>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -314,18 +360,18 @@
                         </button>
                     </div>
                 </div>
-            <div class="records">
-                <h1>Records</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate molestias veritatis beatae, voluptates distinctio eligendi, esse, eveniet impedit debitis nesciunt nisi possimus eaque cum nam hic! Qui inventore quisquam perferendis.</p>
+            <!-- <div class="records">
+                <h1 class="scroll-animation">Records</h1>
+                <p class="scroll-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate molestias veritatis beatae, voluptates distinctio eligendi, esse, eveniet impedit debitis nesciunt nisi possimus eaque cum nam hic! Qui inventore quisquam perferendis.</p>
                 <div class="flex-records flex-premios">
-                    <div class="record-item item-1">
+                    <div class="record-item item-1 scroll-animation">
                         <img src="assets/argentina.webp" alt="Messi Record" class="image">
                         <div class="middle">
                             <h1>Premios Colectivos</h1>
                                 <button class="text">Ver Video</button>
                         </div>
                     </div>
-                    <div class="record-item item-2">
+                    <div class="record-item item-2 scroll-animation">
                         <img src="assets/premios-individuales.jpg" alt="Cristiano Ronaldo Record" class="image">
                         <div class="middle">
                             <h1>Premios Individuales</h1>
@@ -333,7 +379,125 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+        </div>
+        <h2 class="records-individuales ver-1">Records Individuales</h2>
+        <p class="records-individuales ver-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iusto obcaecati vitae ipsam, nisi sed, perferendis dolorem cumque, numquam pariatur voluptatem saepe. Tenetur omnis maxime illum minus ea fugit saepe?</p>
+        <div class="cuadro-records record-ind-1">
+          <img src="assets/klose.jpg" alt="">
+          <div class="textos-records">
+            <h2>Mayor anotador</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <!-- <hr class="separacion-records"> -->
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-ind-2">
+          <img src="assets/just fointaine.jpg" alt="">
+          <div class="textos-records">
+            <h2>Más goles en un solo torneo</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-ind-4">
+          <img src="assets/messi-record.mundial.jpeg" alt="">
+          <div class="textos-records">
+            <h2>Más partidos jugados en mundiales</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-ind-5">
+          <img src="assets/pele-record-mundial.jpg" alt="">
+          <div class="textos-records">
+            <h2>Mayor anotador</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <h2 class="records-grupales ver-1">Records Grupales</h2>
+        <p class="records-grupales ver-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iusto obcaecati vitae ipsam, nisi sed, perferendis dolorem cumque, numquam pariatur voluptatem saepe. Tenetur omnis maxime illum minus ea fugit saepe?</p>
+        <div class="cuadro-records record-grup-1">
+          <img src="assets/brasil.png" alt="">
+          <div class="textos-records">
+            <h2>Mayor anotador</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-grup-2">
+          <img src="assets/italia.png" alt="">
+          <div class="textos-records">
+            <h2>Mayor cantidad de partidos invictos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-grup-3">
+          <img src="assets/hungria.jpg" alt="">
+          <div class="textos-records">
+            <h2>Mayor cantidad de goles en un solo partido</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-grup-4">
+          <img src="assets/alemania.png" alt="">
+          <div class="textos-records">
+            <h2>Más finales disputadas</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
+        </div>
+        <div class="separacion-records">
+          <hr>
+          <div class="cuadro-separacion">.</div>
+        </div>
+        <div class="cuadro-records record-grup-5">
+          <img src="assets/maracana-record-mundial.jpg" alt="">
+          <div class="textos-records">
+            <h2>Mayor cantidad de espectadores en un partido</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error modi tempora cumque consequuntur similique veniam ullam recusandae nisi enim nihil repellat laudantium exercitationem, itaque hic voluptatem tenetur fuga iure eligendi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ducimus labore sint voluptatum
+            </p>
+          </div>
         </div>
     </main>
     <footer>
@@ -351,6 +515,7 @@
         </div>
     </footer>
 
+    <script src="js/cabecera.js"></script>
     <script src="js/carousel.js" ></script>
     <script src="js/modales-mundial.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
