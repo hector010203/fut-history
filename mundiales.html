@@ -69,6 +69,13 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky");
         }
+
+        let navbarToggler = document.querySelector(".navbar-toggler");
+        let header = document.querySelector("header");
+
+        navbarToggler.addEventListener("click", e =>{
+            header.classList.toggle("sticky");
+        })
 	</script>
 
     <main>

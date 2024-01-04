@@ -1618,36 +1618,40 @@ footer .divisor-footer{
     }
 
 
-    .contenedor-modal {
-        overflow-y: scroll;
-        /* max-height: 400px; */
-        scrollbar-width: thin;
-        scrollbar-color: #888 transparent;
-    }
-    
-    /* Estilo para navegadores basados en WebKit (Chrome, Safari) y Edge */
-    .contenedor-modal::-webkit-scrollbar {
-        width: 12px;
+
+    @media(min-width: 1000px){
+   
+        .contenedor-modal {
+            overflow-y: scroll;
+            /* max-height: 400px; */
+            scrollbar-width: thin;
+            scrollbar-color: #888 transparent;
+        }
         
-    }
+        /* Estilo para navegadores basados en WebKit (Chrome, Safari) y Edge */
+        .contenedor-modal::-webkit-scrollbar {
+            width: 12px;
+            
+        }
+        
+        .contenedor-modal::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 6px;
+        }
     
-    .contenedor-modal::-webkit-scrollbar-thumb {
-        background-color: #888;
-        border-radius: 6px;
-    }
-    
-    /* Estilo para Firefox */
-    .contenedor-modal {
-        scrollbar-width: thin;
-        scrollbar-color: #888 transparent;
-    }
-
-    /* BOTON DE CIERRE DE SWEETALERT */
-.swal2-popup .swal2-close {
-    margin-bottom: -10px;
-    margin-right: 10px;
+        /* Estilo para Firefox */
+        .contenedor-modal {
+            scrollbar-width: thin;
+            scrollbar-color: #888 transparent;
+        }
+        
+        /* BOTON DE CIERRE DE SWEETALERT */
+        .swal2-popup .swal2-close {
+            margin-bottom: -10px;
+            margin-right: 10px;
+        }
 }
-
+    
 .cuadro-records img{
     max-width: 90%;
     height: auto;
