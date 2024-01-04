@@ -13,24 +13,26 @@ document.getElementById("bournemouth").addEventListener("click", function() {
                 '</div>' +
               '</div>' +
               '<div class="my-alert-2">' +
-                '<div class="contenido-modal">' +
-                  '<h2 class="nombre trayectoria">Plantilla</h2>' +
-                  '<p>Descripción de la plantilla del AFC Bournemouth.</p>' +
-                  '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantillas/bournemouth.jpg" alt="Imagen de la plantilla del AFC Bournemouth">' +
+              '   <div class="contenido-modal">' +
+              '       <h2 class="nombre">Plantilla</h2>' +
+              '       <p>El AFC Bournemouth se enorgullece de contar con una plantilla compuesta principalmente por jugadores talentosos. Han surgido grandes nombres en el club, como Eddie Howe y Callum Wilson. La combinación de habilidades y trabajo en equipo es evidente en la plantilla actual, con jugadores que buscan llevar al equipo a nuevas alturas.</p>' +
+              '<div class="image-container-plantilla">' +
+                        '<img src="assets/plantillas/bournemouth.jpg" alt="Imagen de la plantilla del Arsenal">' +
                   '</div>' +
-                  '<h2 class="nombre">Estadio y sede</h2>' +
-                  '<div class="image-container-estadio">' +
-                  '<img src="assets/estadios/bournemouth.jpg" alt="Imagen de los rivales del AFC Bournemouth">' +
-                  '</div>' +
-                  '<p>El AFC Bournemouth juega sus partidos en el Vitality Stadium, ubicado en Bournemouth. El estadio tiene una capacidad para 11,360 espectadores y ha sido el hogar del club desde 1910.</p>' +
+              '   </div>' +
+              '</div>'+
+              '<h2 class="nombre">Estadio y sede</h2>' +
+              '<p>El AFC Bournemouth juega sus partidos en el Vitality Stadium, ubicado en Bournemouth. El estadio tiene una capacidad para 11,360 espectadores y ha sido el hogar del club desde 1910.</p>' +
+              '<div class="image-container-estadio">' +
+              '<img src="assets/estadios/bournemouth.jpg" alt="Imagen de los rivales del AFC Bournemouth">' +
+              '</div>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>El AFC Bournemouth ha logrado ascender a la Premier League en varias ocasiones en los últimos años y ha tenido destacadas participaciones en la FA Cup.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
                   '<p>Los principales rivales del AFC Bournemouth son el Southampton y el Portsmouth, con quienes disputa el "Derbi del Sur de Inglaterra".</p>' +
-                  '<div class="image-container-rivales">' +
+                  '<div class="image-container-rivalesimage-container-rivales">' +
                     '<img src="assets/premier/Southampton_Crest_Comp_180x1801550143313525.png" alt="imagen">' +
-                    '<img src="assets/premier/portsmouth.png" alt="imagen">' +
+                    '<img src="assets/portsmouth.png" alt="imagen">' +
                   '</div>' +
                 '</div>' +
               '</div>' +
@@ -65,10 +67,10 @@ document.getElementById("arsenal").addEventListener("click", function() {
                         '<img src="assets/plantillas/arsenal.jpg" alt="Imagen de la plantilla del Arsenal">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio y sede</h2>' +
+                  '<p>El Arsenal juega sus partidos en el Emirates Stadium, ubicado en Holloway, Londres. El estadio, inaugurado en 2006, tiene una capacidad para albergar a más de 60,000 espectadores.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/wembley.webp" alt="Imagen de los rivales del Arsenal">' +
                   '</div>' +
-                  '<p>El Arsenal juega sus partidos en el Emirates Stadium, ubicado en Holloway, Londres. El estadio, inaugurado en 2006, tiene una capacidad para albergar a más de 60,000 espectadores.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>El Arsenal ha ganado numerosos títulos a lo largo de su historia, incluyendo 13 títulos de la Premier League, 14 FA Cups y 2 Copas de la UEFA. Además, el club ha logrado completar temporadas invictas, como en la temporada 2003-2004, donde se les conoció como "The Invincibles".</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -87,182 +89,229 @@ document.getElementById("arsenal").addEventListener("click", function() {
         width: 900,
     });
 });
-
 // Aston Villa
 document.getElementById("aston-villa").addEventListener("click", function() {
-    Swal.fire({
-        html: 
-            '<div class="contenedor-modal">' +
-              '<div class="my-alert">' +
-                '<div class="image-container">' +
-                    '<img src="assets/premier/Aston_Villa_Crest_Comp_180x1801549971248164.png" alt="Escudo de Aston Villa">' +
-                '</div>' +
-                '<div class="contenido-modal">' +
-                    '<h2 class="nombre">Aston Villa</h2>' +
-                    '<p>El Aston Villa Football Club es un club de fútbol inglés con sede en Birmingham, Inglaterra. Fue fundado en 1874 y actualmente juega en la Premier League. Aston Villa es uno de los clubes más antiguos y exitosos de Inglaterra, habiendo ganado numerosos títulos nacionales e internacionales en su historia.</p>' +
+  Swal.fire({
+      html: 
+          '<div class="contenedor-modal">' +
+            '<div class="my-alert">' +
+              '<div class="image-container">' +
+                  '<img src="assets/premier/Aston_Villa_Crest_Comp_180x1801549971248164.png" alt="Escudo de Aston Villa">' +
+              '</div>' +
+              '<div class="contenido-modal">' +
+                  '<h2 class="nombre">Aston Villa</h2>' +
+                  '<p>El Aston Villa Football Club es un club de fútbol inglés con sede en Birmingham, Inglaterra. Fue fundado en 1874 y actualmente juega en la Premier League. Aston Villa es uno de los clubes más antiguos y exitosos de Inglaterra, habiendo ganado numerosos títulos nacionales e internacionales en su historia.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Plantilla</h2>' +
+                '<p>El Aston Villa cuenta con una plantilla compuesta por talentosos jugadores de diferentes nacionalidades. Entre sus jugadores destacados se encuentran [Nombre del Jugador Destacado], [Nombre del Jugador Destacado] y [Nombre del Jugador Destacado].</p>' +
+                '<div class="image-container-plantilla">' +
+                  '<img src="assets/plantillas/aston.jpg" alt="Imagen de la plantilla del Aston Villa">' +
                 '</div>' +
               '</div>' +
-              '<div class="my-alert-2">' +
-                '<div class="contenido-modal">' +
-                  '<h2 class="nombre trayectoria">Plantilla</h2>' +
-                  '<p>Descripción de la plantilla del Aston Villa.</p>' +
-                  '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantillas/aston.jpg" alt="Imagen de la plantilla del Aston Villa">' +
-                  '</div>' +
-                  '<h2 class="nombre">Estadio y sede</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/aston.png" alt="Imagen del estadio del Aston Villa">' +
-                  '</div>' +
-                  '<p>El Aston Villa juega sus partidos en Villa Park, ubicado en Birmingham. El estadio tiene una capacidad para 42,785 espectadores y ha sido el hogar del club desde 1897.</p>' +
-                  '<h2 class="nombre">Logros</h2>' +
-                  '<p>Aston Villa ha ganado la First Division (ahora conocida como la Premier League) en varias ocasiones, así como la Copa de Europa en 1982. El club también cuenta con numerosas victorias en la FA Cup y la Football League Cup.</p>' +
-                  '<h2 class="nombre">Rivales</h2>' +
-                  '<p>Los principales rivales del Aston Villa son el Birmingham City y el West Bromwich Albion, con quienes disputa el "Second City Derby" y el "Black Country Derby", respectivamente.</p>' +
-                  '<div class="image-container-rivales">' +
-                    '<img src="assets/premier/birnmingham.png" alt="imagen">' +
-                    '<img src="assets/premier/albion.png" alt="imagen">' +
-                  '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Estadio y sede</h2>' +
+                '<p>El Aston Villa juega sus partidos en Villa Park, ubicado en Birmingham. El estadio tiene una capacidad para 42,785 espectadores y ha sido el hogar del club desde 1897.</p>' +
+                '<div class="image-container-estadio">' +
+                  '<img src="assets/estadios/aston.png" alt="Imagen del estadio del Aston Villa">' +
                 '</div>' +
               '</div>' +
-            '</div>',
-        showCloseButton: true,
-        showCancelButton: true,
-        showConfirmButton: false,
-        background: '#1c1c1c',
-        width: 900,
-    });
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Logros</h2>' +
+                '<p>Aston Villa ha ganado la First Division (ahora conocida como la Premier League) en varias ocasiones, así como la Copa de Europa en 1982. El club también cuenta con numerosas victorias en la FA Cup y la Football League Cup.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Rivales</h2>' +
+                '<p>Los principales rivales del Aston Villa son el Birmingham City y el West Bromwich Albion, con quienes disputa el "Second City Derby" y el "Black Country Derby", respectivamente.</p>' +
+                '<div class="image-container-rivales">' +
+                  '<img src="assets/premier/birnmingham.png" alt="imagen">' +
+                  '<img src="assets/premier/albion.png" alt="imagen">' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>',
+      showCloseButton: true,
+      showCancelButton: true,
+      showConfirmButton: false,
+      background: '#1c1c1c',
+      width: 900,
+  });
 });
 
 // Brentford
 document.getElementById("brentford").addEventListener("click", function() {
-    Swal.fire({
-        html: 
-            '<div class="contenedor-modal">' +
-              '<div class="my-alert">' +
-                '<div class="image-container">' +
-                    '<img src="assets/premier/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="Escudo de Brentford">' +
-                '</div>' +
-                '<div class="contenido-modal">' +
-                    '<h2 class="nombre">Brentford</h2>' +
-                    '<p>Brentford Football Club es un club de fútbol inglés con sede en Brentford, Londres. Fue fundado en 1889 y actualmente juega en la Premier League. Brentford ha experimentado ascensos en los últimos años y logró llegar a la máxima categoría del fútbol inglés por primera vez en décadas.</p>' +
+  Swal.fire({
+      html: 
+          '<div class="contenedor-modal">' +
+            '<div class="my-alert">' +
+              '<div class="image-container">' +
+                  '<img src="assets/premier/Brentford_Crest_Comp_180x1801622725861602_img1x.png" alt="Escudo de Brentford">' +
+              '</div>' +
+              '<div class="contenido-modal">' +
+                  '<h2 class="nombre">Brentford</h2>' +
+                  '<p>Brentford Football Club es un club de fútbol inglés con sede en Brentford, Londres. Fue fundado en 1889 y actualmente juega en la Premier League. Brentford ha experimentado ascensos en los últimos años y logró llegar a la máxima categoría del fútbol inglés por primera vez en décadas.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Plantilla</h2>' +
+                '<p>La plantilla del Brentford está compuesta por una mezcla de talentosos jugadores jóvenes y experimentados. Entre los jugadores más destacados se encuentran [Nombre del Jugador Destacado], [Nombre del Jugador Destacado] y [Nombre del Jugador Destacado].</p>' +
+                '<div class="image-container-plantilla">' +
+                  '<img src="assets/plantillas/brentford.jpeg" alt="Imagen de la plantilla del Brentford">' +
                 '</div>' +
               '</div>' +
-              '<div class="my-alert-2">' +
-                '<div class="contenido-modal">' +
-                  '<h2 class="nombre trayectoria">Plantilla</h2>' +
-                  '<p>Descripción de la plantilla del Brentford.</p>' +
-                  '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantillas/brentford.jpeg" alt="Imagen de la plantilla del Brentford">' +
-                  '</div>' +
-                  '<h2 class="nombre">Estadio y sede</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/brentford.png" alt="Imagen de los rivales del Brentford">' +
-                  '</div>' +
-                  '<p>El Brentford juega sus partidos en el Brentford Community Stadium, ubicado en Brentford, Londres. El estadio, inaugurado en 2020, tiene una capacidad para albergar a más de 17,000 espectadores.</p>' +
-                  '<h2 class="nombre">Logros</h2>' +
-                  '<p>El Brentford ha logrado ascender a la Premier League por primera vez en su historia en la temporada 2020-2021. Anteriormente, el club ha tenido destacadas participaciones en la Football League y ha alcanzado las rondas finales de la FA Cup en varias ocasiones.</p>' +
-                  '<h2 class="nombre">Rivales</h2>' +
-                  '<p>El Brentford mantiene una rivalidad local con el Queens Park Rangers (QPR), conocido como el "West London Derby".</p>' +
-                  '<div class="image-container-rivales">' +
-                    '<img src="assets/premier/queens.png" alt="imagen">' +
-                  '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+              '<h2 class="nombre">Estadio y sede</h2>' +
+              '<p>El Brentford juega sus partidos en el Brentford Community Stadium, ubicado en Brentford, Londres. El estadio, inaugurado en 2020, tiene una capacidad para [Capacidad del Estadio] espectadores.</p>' +
+              '<div class="image-container-estadio">' +
+                '<img src="assets/estadios/brentford.png" alt="Imagen del estadio del Brentford">' +
+              '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Logros</h2>' +
+                '<p>Brentford ha logrado [Mencionar Logros Destacados del Club], demostrando su crecimiento y determinación en la competencia.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Rivales</h2>' +
+                '<p>Los seguidores del Brentford consideran al Fulham como su principal rival, y los enfrentamientos entre ambos equipos son siempre intensos y emocionantes.</p>' +
+                '<div class="image-container-rivales">' +
+                  '<img src="assets/premier/Fulham_Crest_Comp_180x1801550567888147.png" alt="Fulham">' +
                 '</div>' +
               '</div>' +
-            '</div>',
-        showCloseButton: true,
-        showCancelButton: true,
-        showConfirmButton: false,
-        background: '#1c1c1c',
-        width: 900,
-    });
+            '</div>' +
+          '</div>',
+      showCloseButton: true,
+      showCancelButton: true,
+      showConfirmButton: false,
+      background: '#1c1c1c',
+      width: 900,
+  });
 });
-
-// Brighton
+// Brighton & Hove Albion
 document.getElementById("brighton").addEventListener("click", function() {
-    Swal.fire({
-        html: 
-            '<div class="contenedor-modal">' +
-              '<div class="my-alert">' +
-                '<div class="image-container">' +
-                    '<img src="assets/premier/Brighton_and_Hove_Albion_Crest_Comp_180x1801550139308582.png" alt="Escudo de Brighton">' +
-                '</div>' +
-                '<div class="contenido-modal">' +
-                    '<h2 class="nombre">Brighton & Hove Albion</h2>' +
-                    '<p>Brighton & Hove Albion Football Club, comúnmente conocido como Brighton, es un club de fútbol inglés con sede en Brighton, East Sussex. Fue fundado en 1901 y actualmente juega en la Premier League. Brighton ha tenido una historia de altibajos, pero en los últimos años ha logrado consolidarse en la máxima categoría del fútbol inglés.</p>' +
+  Swal.fire({
+      html: 
+          '<div class="contenedor-modal">' +
+            '<div class="my-alert">' +
+              '<div class="image-container">' +
+                  '<img src="assets/premier/Brighton_and_Hove_Albion_Crest_Comp_180x1801550139308582.png" alt="Escudo de Brighton">' +
+              '</div>' +
+              '<div class="contenido-modal">' +
+                  '<h2 class="nombre">Brighton & Hove Albion</h2>' +
+                  '<p>Brighton & Hove Albion Football Club, comúnmente conocido como Brighton, es un club de fútbol inglés con sede en Brighton, East Sussex. Fue fundado en 1901 y actualmente juega en la Premier League. Brighton ha tenido una historia de altibajos, pero en los últimos años ha logrado consolidarse en la máxima categoría del fútbol inglés.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Plantilla</h2>' +
+                '<p>La plantilla del Brighton & Hove Albion está conformada por una mezcla de talento local e internacional. Entre sus jugadores más destacados se encuentran [Nombre del Jugador Destacado], [Nombre del Jugador Destacado] y [Nombre del Jugador Destacado].</p>' +
+                '<div class="image-container-plantilla">' +
+                  '<img src="assets/plantillas/brighton.webp" alt="Imagen de la plantilla del Brighton">' +
                 '</div>' +
               '</div>' +
-              '<div class="my-alert-2">' +
-                '<div class="contenido-modal">' +
-                  '<h2 class="nombre trayectoria">Plantilla</h2>' +
-                  '<p>Descripción de la plantilla del Brighton.</p>' +
-                  '<div class="image-container-plantilla">' +
-                  '<img src="assets/plantillas/brighton.webp" alt="Imagen del estadio del Brighton">' +
-                  '</div>' +
-                  '<h2 class="nombre">Estadio y sede</h2>' +
-                  '<div class="image-container-estadio">' +
-                  '<img src="assets/estadios/brighton.webp" alt="Imagen de los rivales del Brighton">' +
-                  '<p>El Brighton juega sus partidos en el American Express Community Stadium, también conocido como Falmer Stadium, ubicado en Falmer, Brighton. El estadio, inaugurado en 2011, tiene una capacidad para albergar a más de 30,000 espectadores.</p>' +
-                  '<h2 class="nombre">Logros</h2>' +
-                  '<p>A lo largo de su historia, Brighton ha logrado ascensos a diferentes divisiones del fútbol inglés. En los últimos años, el club ha tenido destacadas participaciones en la Championship y ha logrado mantenerse en la Premier League.</p>' +
-                  '<h2 class="nombre">Rivales</h2>' +
-                  '<p>El principal rival del Brighton es el Crystal Palace, con quien disputa el "M23 Derby".</p>' +
-                  '<div class="image-container-rivales">' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+              '<h2 class="nombre">Estadio y sede</h2>' +
+              '<p>El Brighton & Hove Albion juega sus partidos en el American Express Community Stadium, también conocido como Falmer Stadium, ubicado en Falmer, Brighton. El estadio, inaugurado en 2011, tiene una capacidad para albergar a más de 30,000 espectadores.</p>' +
+              '<div class="image-container-estadio">' +
+                '<img src="assets/estadios/brighton.webp" alt="Imagen del estadio del Brighton">' +
+              '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Logros</h2>' +
+                '<p>A lo largo de su historia, Brighton & Hove Albion ha alcanzado varios logros importantes en el fútbol inglés, incluyendo [Mencionar Logros Destacados del Club].</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Rivales</h2>' +
+                '<p>El principal rival del Brighton & Hove Albion es el Crystal Palace, con quien disputa el "M23 Derby". Los enfrentamientos entre ambos equipos son siempre apasionados y esperados por los aficionados.</p>' +
+                '<div class="image-container-rivales">' +
                   '<img src="assets/premier/Crystal_Palace_Crest_Comp_180x1801659968262919.png" alt="imagen">' +
                 '</div>' +
-                '</div>' +
               '</div>' +
-            '</div>',
-        showCloseButton: true,
-        showCancelButton: true,
-        showConfirmButton: false,
-        background: '#1c1c1c',
-        width: 900,
-    });
+            '</div>' +
+          '</div>',
+      showCloseButton: true,
+      showCancelButton: true,
+      showConfirmButton: false,
+      background: '#1c1c1c',
+      width: 900,
+  });
 });
 
-
+// Chelsea
 document.getElementById("chelsea").addEventListener("click", function() {
-    Swal.fire({
-        html: 
-            '<div class="contenedor-modal">' +
-              '<div class="my-alert">' +
-                '<div class="image-container">' +
-                    '<img src="assets/premier/Chelsea_Crest_Comp_180x1801550141382168.png" alt="Escudo de Chelsea">' +
-                '</div>' +
-                '<div class="contenido-modal">' +
-                    '<h2 class="nombre">Chelsea</h2>' +
-                    '<p>Fundado en 1905, el Chelsea Football Club es uno de los clubes más exitosos de Inglaterra. Ha ganado múltiples títulos de la Premier League, la FA Cup y la Copa de la Liga. También ha tenido éxito a nivel europeo, ganando la Liga de Campeones de la UEFA en varias ocasiones.</p>' +
+  Swal.fire({
+      html: 
+          '<div class="contenedor-modal">' +
+            '<div class="my-alert">' +
+              '<div class="image-container">' +
+                  '<img src="assets/premier/Chelsea_Crest_Comp_180x1801550141382168.png" alt="Escudo de Chelsea">' +
+              '</div>' +
+              '<div class="contenido-modal">' +
+                  '<h2 class="nombre">Chelsea</h2>' +
+                  '<p>El Chelsea Football Club es uno de los clubes más exitosos de Inglaterra. Con una rica historia, el club ha ganado múltiples títulos de la Premier League, la FA Cup y la Liga de Campeones de la UEFA. Con jugadores de renombre y un estilo de juego atractivo, el Chelsea siempre está en la cima de la competencia.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Plantilla</h2>' +
+                '<p>La plantilla del Chelsea está llena de estrellas y talento internacional. Jugadores como [Nombre del Jugador Destacado], [Nombre del Jugador Destacado] y [Nombre del Jugador Destacado] lideran el equipo y son clave en su éxito continuo.</p>' +
+                '<div class="image-container-plantilla">' +
+                  '<img src="assets/plantillas/chelsea.jpg" alt="Imagen de la plantilla del Chelsea">' +
                 '</div>' +
               '</div>' +
-              '<div class="my-alert-2">' +
-                '<div class="contenido-modal">' +
-                  '<h2 class="nombre trayectoria">Plantilla</h2>' +
-                  '<p>El Chelsea cuenta con una plantilla talentosa compuesta por jugadores de clase mundial. Entre sus jugadores destacados se encuentran NGolo Kanté, Mason Mount y Timo Werner. El equipo es conocido por su estilo de juego agresivo y su enfoque en la posesión del balón.</p>' +
-                  '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantillas/chelsea.jpg" alt="Imagen de la plantilla del Chelsea">' +
-                  '</div>' +
-                  '<h2 class="nombre">Estadio</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/chelsea.jpg" alt="Imagen del estadio del Chelsea">' +
-                  '</div>' +
-                  '<p>El Chelsea juega sus partidos en el estadio Stamford Bridge, ubicado en Londres. Con una capacidad para más de 40,000 espectadores, es uno de los estadios más icónicos de Inglaterra.</p>' +
-                  '<h2 class="nombre">Logros</h2>' +
-                  '<p>El Chelsea ha ganado múltiples títulos de la Premier League, la FA Cup y la Copa de la Liga. También ha tenido éxito a nivel europeo, ganando la Liga de Campeones de la UEFA en varias ocasiones.</p>' +
-                  '<h2 class="nombre">Rivales</h2>' +
-                  '<p>El Chelsea mantiene una histórica rivalidad con clubes como el Arsenal y el Tottenham Hotspur. Los partidos contra estos equipos son conocidos como el "North London Derby" y el "West London Derby", respectivamente.</p>' +
-                  '<div class="image-container-rivales">' +
-                      '<img src="assets/premier/Arsenal_Crest_Comp_180x1801549549037942.png" alt="imagen">' +
-                      '<img src="assets/premier/Tottenham_Hotspur_Crest_Comp_180x1801550155045146.png" alt="imagen">' +
-                  '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Estadio</h2>' +
+                '<p>El Chelsea juega sus partidos en el estadio Stamford Bridge, un icónico lugar ubicado en Londres. Con una capacidad para más de 40,000 espectadores, el estadio siempre está lleno de pasión y energía durante los encuentros.</p>' +
+                '<div class="image-container-estadio">' +
+                  '<img src="assets/estadios/chelsea.jpg" alt="Imagen del estadio del Chelsea">' +
                 '</div>' +
               '</div>' +
-            '</div>',
-        showCloseButton: true,
-        showCancelButton: true,
-        showConfirmButton: false,
-        background: '#1c1c1c',
-        width: 900,
-    });
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Logros</h2>' +
+                '<p>Con múltiples títulos de la Premier League, la FA Cup y la Liga de Campeones de la UEFA, el Chelsea ha dejado una marca imborrable en la historia del fútbol. El club ha logrado [Mencionar Logros Destacados del Club] a lo largo de los años.</p>' +
+              '</div>' +
+            '</div>' +
+            '<div class="my-alert-2">' +
+              '<div class="contenido-modal">' +
+                '<h2 class="nombre">Rivales</h2>' +
+                '<p>El Chelsea mantiene intensas rivalidades con clubes como el Arsenal y el Tottenham Hotspur. Los enfrentamientos contra estos equipos son conocidos como el "North London Derby" y el "West London Derby", respectivamente.</p>' +
+                '<div class="image-container-rivales">' +
+                  '<img src="assets/premier/Arsenal_Crest_Comp_180x1801549549037942.png" alt="imagen">' +
+                  '<img src="assets/premier/Tottenham_Hotspur_Crest_Comp_180x1801550155045146.png" alt="imagen">' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>',
+      showCloseButton: true,
+      showCancelButton: true,
+      showConfirmButton: false,
+      background: '#1c1c1c',
+      width: 900,
+  });
 });
 
 document.getElementById("crystal-palace").addEventListener("click", function() {
@@ -286,16 +335,15 @@ document.getElementById("crystal-palace").addEventListener("click", function() {
                         '<img src="assets/plantillas/crystal.jpeg" alt="Imagen de la plantilla de Crystal Palace">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>Crystal Palace juega sus partidos en el Selhurst Park, ubicado en el sur de Londres. El estadio cuenta con una atmósfera única y apasionada durante los partidos de fútbol.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/crystal.jpg" alt="Imagen del estadio de Crystal Palace">' +
                   '</div>' +
-                  '<p>Crystal Palace juega sus partidos en el Selhurst Park, ubicado en el sur de Londres. El estadio cuenta con una atmósfera única y apasionada durante los partidos de fútbol.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>A lo largo de su historia, Crystal Palace ha obtenido logros destacados en competiciones nacionales, incluyendo apariciones en la FA Cup y en la Football League Cup. El equipo ha logrado mantener su lugar en la Premier League en temporadas recientes.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
                   '<p>Crystal Palace mantiene una rivalidad local con el Brighton & Hove Albion, conocido como el "M23 derby". Estos enfrentamientos son intensos y muy esperados por los aficionados de ambos equipos.</p>' +
                   '<div class="image-container-rivales">' +
-                      '<img src="assets/premier/Brighton_and_Hove_Albion_Crest_Comp_180x1801550139308582.png" alt="imagen">' +
                       '<img src="assets/premier/Brighton_and_Hove_Albion_Crest_Comp_180x1801550139308582.png" alt="imagen">' +
                   '</div>' +
                 '</div>' +
@@ -330,10 +378,10 @@ document.getElementById("everton").addEventListener("click", function() {
                         '<img src="assets/plantillas/everton.jpg" alt="Imagen de la plantilla de Everton">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>Goodison Park es el estadio de Everton y está ubicado en Liverpool. Es conocido por su atmósfera vibrante y apasionada durante los partidos de fútbol.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/everton.gif" alt="Imagen del estadio de Everton">' +
                   '</div>' +
-                  '<p>Goodison Park es el estadio de Everton y está ubicado en Liverpool. Es conocido por su atmósfera vibrante y apasionada durante los partidos de fútbol.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Everton ha tenido éxito en competiciones nacionales e internacionales a lo largo de su historia. Ha ganado la Liga de Campeones de la UEFA en dos ocasiones y ha obtenido varios títulos de la liga y la copa doméstica en Inglaterra.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -370,13 +418,13 @@ document.getElementById("fulham").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Fulham está compuesta por jugadores de diversas nacionalidades. El equipo ha logrado promociones a la Premier League en temporadas recientes y busca establecerse en la máxima categoría del fútbol inglés.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantilla/fulham.jpg" alt="Imagen de la plantilla de Fulham">' +
+                        '<img src="assets/plantillas/fulham.jpg" alt="Imagen de la plantilla de Fulham">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>Craven Cottage es el estadio de Fulham y se encuentra ubicado a orillas del río Támesis. Es conocido por su encanto histórico y su ambiente familiar durante los partidos de fútbol.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/fulham.png" alt="Imagen del estadio de Fulham">' +
                   '</div>' +
-                  '<p>Craven Cottage es el estadio de Fulham y se encuentra ubicado a orillas del río Támesis. Es conocido por su encanto histórico y su ambiente familiar durante los partidos de fútbol.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>A lo largo de su historia, Fulham ha obtenido logros destacados, incluyendo apariciones en la final de la UEFA Europa League en la temporada 2009-2010. El club también ha tenido éxito en competiciones nacionales y ha logrado promociones a la Premier League en varias ocasiones.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -401,7 +449,7 @@ document.getElementById("leeds-united").addEventListener("click", function() {
             '<div class="contenedor-modal">' +
               '<div class="my-alert">' +
                 '<div class="image-container">' +
-                    '<img src="assets/premier/premier/Leeds_United_Crest_Comp_180x1801550570237737.png" alt="Escudo de Leeds United">' +
+                    '<img src="assets/premier/Leeds_United_Crest_Comp_180x1801550570237737.png" alt="Escudo de Leeds United">' +
                 '</div>' +
                 '<div class="contenido-modal">' +
                     '<h2 class="nombre">Leeds United</h2>' +
@@ -413,13 +461,13 @@ document.getElementById("leeds-united").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Leeds United está compuesta por jugadores de diversas nacionalidades. El equipo se caracteriza por su estilo de juego agresivo y ofensivo. Bajo la dirección del entrenador Marcelo Bielsa, Leeds United ha logrado promociones a la Premier League y busca establecerse en la máxima categoría del fútbol inglés.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantilla/leeds.jpg" alt="Imagen de la plantilla de Leeds United">' +
+                        '<img src="assets/plantillas/leeds.jpg" alt="Imagen de la plantilla de Leeds United">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>Elland Road es el estadio de Leeds United y se encuentra ubicado en Leeds. Es conocido por su atmósfera apasionada y por ser uno de los estadios más emblemáticos del fútbol inglés.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/leeds.jpg" alt="Imagen del estadio de Leeds United">' +
                   '</div>' +
-                  '<p>Elland Road es el estadio de Leeds United y se encuentra ubicado en Leeds. Es conocido por su atmósfera apasionada y por ser uno de los estadios más emblemáticos del fútbol inglés.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>A lo largo de su historia, Leeds United ha obtenido logros destacados, incluyendo la conquista de la Liga de Campeones de la UEFA en la temporada 1974-1975. El club también ha ganado varias veces la liga y la copa doméstica en Inglaterra.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -456,13 +504,13 @@ document.getElementById("leicester").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Leicester City está compuesta por jugadores de diversas nacionalidades. El equipo se caracteriza por su estilo de juego dinámico y ofensivo. En la temporada 2015-2016, Leicester City sorprendió al mundo al ganar la Premier League, superando a equipos de mayor presupuesto.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantilla/leicester.jpeg" alt="Imagen de la plantilla de Leicester">' +
+                        '<img src="assets/plantillas/leicester.jpeg" alt="Imagen de la plantilla de Leicester">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>El King Power Stadium es el estadio de Leicester City y está ubicado en Leicester. Es conocido por su atmósfera vibrante y por ser el escenario de los éxitos más destacados del club en los últimos años.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/leicester.jpg" alt="Imagen del estadio de Leicester">' +
                   '</div>' +
-                  '<p>El King Power Stadium es el estadio de Leicester City y está ubicado en Leicester. Es conocido por su atmósfera vibrante y por ser el escenario de los éxitos más destacados del club en los últimos años.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>El logro más destacado de Leicester City fue su inesperado título de la Premier League en la temporada 2015-2016, considerado uno de los mayores milagros en la historia del fútbol. El club también ha ganado la Football League Cup en varias ocasiones.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -502,10 +550,10 @@ document.getElementById("liverpool").addEventListener("click", function() {
                         '<img src="assets/plantillas/liverpool.jpg" alt="Imagen de la plantilla de Liverpool">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/liverpool.jpg" alt="Imagen del estadio de Liverpool">' +
-                  '</div>' +
                   '<p>Anfield es el estadio de Liverpool y es conocido por su atmósfera única y apasionada durante los partidos de fútbol. Es considerado uno de los templos del fútbol inglés.</p>' +
+                  '<div class="image-container-estadio">' +
+                    '<img src="assets/estadios/anfield.jpg" alt="Imagen del estadio de Liverpool">' +
+                  '</div>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Liverpool ha ganado numerosos títulos y trofeos a lo largo de su historia, incluyendo la Premier League, la Liga de Campeones de la UEFA, la Supercopa de Europa y la Copa Intercontinental. El club ha tenido grandes épocas de éxito y ha sido reconocido como uno de los mejores equipos del mundo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -545,10 +593,10 @@ document.getElementById("man-city").addEventListener("click", function() {
                         '<img src="assets/plantillas/city.jpg" alt="Imagen de la plantilla de Manchester City">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>El Etihad Stadium es el estadio de Manchester City y se encuentra ubicado en Manchester. Es conocido por su modernidad y comodidades de primer nivel, ofreciendo una experiencia de primer nivel para los espectadores.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/city.webp" alt="Imagen del estadio de Manchester City">' +
                   '</div>' +
-                  '<p>El Etihad Stadium es el estadio de Manchester City y se encuentra ubicado en Manchester. Es conocido por su modernidad y comodidades de primer nivel, ofreciendo una experiencia de primer nivel para los espectadores.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Manchester City ha experimentado una era de gran éxito en las últimas décadas, ganando varios títulos de la Premier League, copas nacionales e internacionales. Bajo la propiedad del Sheikh Mansour, el club ha logrado establecerse como uno de los equipos más poderosos de Inglaterra y Europa.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -588,10 +636,10 @@ document.getElementById("man-united").addEventListener("click", function() {
                         '<img src="assets/plantillas/united.jpg" alt="Imagen de la plantilla de Manchester United">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/old-trafford.jpg" alt="Imagen del estadio de Manchester United">' +
-                  '</div>' +
                   '<p>Old Trafford es el estadio de Manchester United y se encuentra ubicado en Manchester. Es conocido como el "Teatro de los Sueños" y ha sido testigo de algunos de los momentos más memorables en la historia del fútbol inglés y mundial.</p>' +
+                  '<div class="image-container-estadio">' +
+                    '<img src="assets/estadios/old trafford.jpg" alt="Imagen del estadio de Manchester United">' +
+                  '</div>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Manchester United ha ganado numerosos títulos y trofeos a lo largo de su historia, incluyendo la Premier League, la Liga de Campeones de la UEFA, la Copa Intercontinental y el Mundial de Clubes de la FIFA. El club ha tenido épocas de gran dominio en el fútbol inglés y europeo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -628,13 +676,13 @@ document.getElementById("newcastle").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Newcastle United está compuesta por jugadores de diferentes nacionalidades. El equipo ha tenido altibajos en su trayectoria reciente, pero cuenta con una base de aficionados apasionados y leales. Newcastle United busca consolidarse en la Premier League y competir por los puestos más altos de la tabla.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/premier/newcastle.jpg" alt="Imagen de la plantilla de Newcastle">' +
+                        '<img src="assets/plantillas/newcastle.jpg" alt="Imagen de la plantilla de Newcastle">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>St. James\' Park es el estadio de Newcastle United y se encuentra ubicado en Newcastle upon Tyne. Es conocido por su atmósfera vibrante durante los partidos y por ser uno de los estadios más emblemáticos de la Premier League.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/newcastle.jpg" alt="Imagen del estadio de Newcastle">' +
                   '</div>' +
-                  '<p>St. James\' Park es el estadio de Newcastle United y se encuentra ubicado en Newcastle upon Tyne. Es conocido por su atmósfera vibrante durante los partidos y por ser uno de los estadios más emblemáticos de la Premier League.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>A lo largo de su historia, Newcastle United ha ganado varios títulos nacionales e internacionales. El club ha tenido éxito en la FA Cup y ha tenido participaciones en competiciones europeas. Sin embargo, su mayor logro reciente fue el ascenso a la Premier League tras una temporada en la Championship.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -674,10 +722,10 @@ document.getElementById("spurs").addEventListener("click", function() {
                         '<img src="assets/plantillas/spurs.jpg" alt="Imagen de la plantilla de Tottenham">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>Tottenham Hotspur Stadium es el estadio de Tottenham y se encuentra ubicado en Londres. Es conocido por su diseño moderno y por ser uno de los estadios más nuevos de la Premier League.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/spurs.jpg" alt="Imagen del estadio de Tottenham">' +
                   '</div>' +
-                  '<p>Tottenham Hotspur Stadium es el estadio de Tottenham y se encuentra ubicado en Londres. Es conocido por su diseño moderno y por ser uno de los estadios más nuevos de la Premier League.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>A lo largo de su historia, Tottenham ha ganado títulos nacionales e internacionales, incluyendo la liga inglesa, la FA Cup y la Copa de la UEFA. El club ha tenido épocas de éxito y ha sido reconocido por su estilo de juego atractivo y ofensivo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -718,10 +766,10 @@ document.getElementById("nottinham").addEventListener("click", function() {
                         '<img src="assets/plantillas/forest.webp" alt="Imagen de la plantilla de Nothinham Forest">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>El estadio de Nothinham Forest se llama City Ground y se encuentra ubicado en Nottingham. Es conocido por su atmósfera apasionada y por ser el escenario de grandes momentos en la historia del club.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/forest.jpg" alt="Imagen del estadio de Nothinham Forest">' +
                   '</div>' +
-                  '<p>El estadio de Nothinham Forest se llama City Ground y se encuentra ubicado en Nottingham. Es conocido por su atmósfera apasionada y por ser el escenario de grandes momentos en la historia del club.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Nothinham Forest ha ganado varias ligas inglesas, incluyendo el título de la Liga de Campeones de la UEFA en dos ocasiones. El club ha dejado una marca significativa en el fútbol inglés y europeo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -760,13 +808,13 @@ document.getElementById("southampton").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Southampton está compuesta por jugadores talentosos de diferentes nacionalidades. El equipo se caracteriza por su estilo de juego ofensivo y por promover el desarrollo de jóvenes talentos a través de su academia de fútbol.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantillas/southampton.jpeg" alt="Imagen de la plantilla de Southampton">' +
+                        '<img src="assets/plantillas/southampthon.jpeg" alt="Imagen de la plantilla de Southampton">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
-                  '<div class="image-container-estadio">' +
-                    '<img src="assets/estadios/southampton.jpeg" alt="Imagen del estadio de Southampton">' +
-                  '</div>' +
                   '<p>El estadio de Southampton se llama St Marys Stadium y se encuentra ubicado en Southampton. Es conocido por su atmósfera vibrante y por ser el hogar de los seguidores del club en los partidos de local.</p>' +
+                  '<div class="image-container-estadio">' +
+                    '<img src="assets/estadios/southampthon.jpeg" alt="Imagen del estadio de Southampton">' +
+                  '</div>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Southampton ha tenido éxito en competiciones nacionales e internacionales a lo largo de su historia. El club ha logrado mantener su presencia en la Premier League y ha dejado una marca significativa en el fútbol inglés.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -808,10 +856,10 @@ document.getElementById("westham").addEventListener("click", function() {
                         '<img src="assets/plantillas/west.jpg" alt="Imagen de la plantilla de West Ham">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>El estadio de West Ham se llama London Stadium y se encuentra ubicado en Londres. Es conocido por su modernidad y capacidad para albergar a miles de seguidores en los partidos de local.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/west.jpg" alt="Imagen del estadio de West Ham">' +
                   '</div>' +
-                  '<p>El estadio de West Ham se llama London Stadium y se encuentra ubicado en Londres. Es conocido por su modernidad y capacidad para albergar a miles de seguidores en los partidos de local.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>West Ham ha tenido momentos destacados en su historia, incluyendo victorias en competiciones nacionales e internacionales. El club ha dejado una huella significativa en el fútbol inglés y ha ganado el corazón de muchos aficionados en todo el mundo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
@@ -851,13 +899,13 @@ document.getElementById("wolverhampton").addEventListener("click", function() {
                   '<h2 class="nombre trayectoria">Plantilla</h2>' +
                   '<p>La plantilla de Wolverhampton está compuesta por jugadores de diferentes nacionalidades. El equipo se caracteriza por su estilo de juego dinámico y ha logrado resultados destacados en competiciones recientes.</p>' +
                   '<div class="image-container-plantilla">' +
-                        '<img src="assets/plantilla/wolves.jpg" alt="Imagen de la plantilla de Wolverhampton">' +
+                        '<img src="assets/plantillas/wolves.jpg" alt="Imagen de la plantilla de Wolverhampton">' +
                   '</div>' +
                   '<h2 class="nombre">Estadio</h2>' +
+                  '<p>El estadio de Wolverhampton se llama Molineux Stadium y se encuentra ubicado en Wolverhampton. Es conocido por su atmósfera apasionada y ha sido el hogar del club durante décadas.</p>' +
                   '<div class="image-container-estadio">' +
                     '<img src="assets/estadios/wolves.jpg" alt="Imagen del estadio de Wolverhampton">' +
                   '</div>' +
-                  '<p>El estadio de Wolverhampton se llama Molineux Stadium y se encuentra ubicado en Wolverhampton. Es conocido por su atmósfera apasionada y ha sido el hogar del club durante décadas.</p>' +
                   '<h2 class="nombre">Logros</h2>' +
                   '<p>Wolverhampton ha tenido éxito en competiciones nacionales e internacionales a lo largo de su historia. El club ha dejado una marca en el fútbol inglés y ha ganado el reconocimiento de aficionados en todo el mundo.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +

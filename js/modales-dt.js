@@ -25,24 +25,24 @@ document.getElementById("guardiola").addEventListener("click", function() {
                   '<h2 class="nombre">Estadisticas</h2>' +
                   '<div class="estadisticas">' +
                     '<div class="goles-container">' +
-                        '<h3 class="goles">Goles</h3>' +
+                        '<h3 class="goles">Titulos</h3>' +
                         '<div class="barra2">.</div>' +
-                        '<p>803</p>' +
+                        '<p>47</p>' +
                     '</div>' +
                     '<div class="asistencias-container">' +
-                        '<h3 class="asistencias">Asistencias</h3>' +
+                        '<h3 class="asistencias">Puntos por partido</h3>' +
                         '<div class="barra2">.</div>' +
-                        '<p>357</p>' +
+                        '<p>2.4</p>' +
                     '</div>' +
                     '<div class="asistencias-container">' +
-                        '<h3 class="asistencias">Partidos</h3>' +
+                        '<h3 class="asistencias">Porcentaje de victorias</h3>' +
                         '<div class="barra2">.</div>' +
-                        '<p>1027</p>' +
+                        '<p>74%</p>' +
                     '</div>' +
                     '<div class="asistencias-container">' +
-                        '<h3 class="asistencias">Titulos</h3>' +
+                        '<h3 class="asistencias">Partidos dirigidos</h3>' +
                         '<div class="barra2">.</div>' +
-                        '<p>42</p>' +
+                        '<p>700</p>' +
                     '</div>' +
                     '<div class="asistencias-container">' +
                         '<h3 class="asistencias">Premios</h3>' +

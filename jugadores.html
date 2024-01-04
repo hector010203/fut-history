@@ -10,32 +10,14 @@
     <title>Fut-History</title>
 </head>
 <body>
-    <!-- <header>
-        <a href="#" class="logo">Logo</a>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="jugadores.html">Jugadores</a></li>
-            <li><a href="dt.html">DT</a></li>
-            <li><a href="estadios.html">Estadios</a></li>
-            <li><a href="equipos.html">Equipos</a></li>
-            <li><a href="mundiales.html">Mundiales</a></li>
-        </ul>
-    </header>
-    <section class="banner">
-        <video muted autoplay loop>
-            <source src="assets/video inicio.mp4" type="video/mp4">
-        </video>
-    </section>
-    <script type="text/javascript">
-		window.addEventListener("scroll", function(){
-			var header = document.querySelector("header");
-			header.classList.toggle("sticky",window.scrollY>0);
-		})
-	</script> -->
-
+    <div id="loader">
+        <div class="loader-spinner"></div>
+      </div>
     <header class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a href="index.html" class="logo-responsive"><img src="assets/logo-1.png" alt=""></a>
+            <a href="index.html" class="enlace-logo">
+                <img class="logo-header" src="assets/logo-1.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" 
                 data-bs-target="#navbarS"
@@ -47,19 +29,17 @@
             <span class="navbar-toggler-icon"></span> <!-- Dibuja el icono con 3 rayitas-->
             </button>
 
-        <div class="collapse navbar-collapse" id="navbarS">
+        <div class="collapse navbar-collapse navbar-links" id="navbarS">
             <ul class="navbar-nav mb-2 mb-lg-0 scroll-animation">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link enlaces">Inicio</a>
+                    <a href="index.html" class="nav-link enlaces scroll-animation">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a href="jugadores.html" class="nav-link enlaces">Jugadores</a>
                 </li>
                 <li class="nav-item">
                     <a href="dt.html" class="nav-link enlaces">DT</a>
-                <!-- </li>
-                    <a href="#" class="logo"><img src="assets/logo-1.png" alt=""></a>
-                </li> -->
+
                 <li class="nav-item">
                     <a href="estadios.html" class="nav-link enlaces">Estadios</a>
                 </li>
@@ -74,7 +54,7 @@
         </div>
     </header>
     <section class="banner">
-        <video muted autoplay loop>
+        <video muted autoplay loop playsinline>
             <source src="assets/video jugadores-comprimido.mp4" type="video/mp4">
         </video>
     </section>
@@ -90,6 +70,7 @@
 	</script>
 
     <main>
+        <svg class="flecha visible" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM385 231c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V193.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 119c9.4-9.4 24.6-9.4 33.9 0L385 231z"/></svg>
         <div class="container-main">
             <div class="introduccion-container">
                 <div class="textos-introduccion">
@@ -178,56 +159,51 @@
             <!-- RECORDS SECCION -->
             <div class="records">
                 <h1 class="scroll-animation">Records</h1>
-                <p class="scroll-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate molestias veritatis beatae, voluptates distinctio eligendi, esse, eveniet impedit debitis nesciunt nisi possimus eaque cum nam hic! Qui inventore quisquam perferendis.</p>
-                <div class="flex-records">
+                <p class="scroll-animation">¡Explora la grandeza del fútbol en nuestra sección de Records de Jugadores! Descubre hazañas asombrosas, récords imbatibles y momentos inolvidables que han marcado la historia de este apasionante deporte. Sumérgete en el legado de los jugadores que han dejado una huella imborrable en el terreno de juego. ¡Bienvenidos a la excelencia futbolística!</p>
+                <div class="flex-records flex-records-dt">
                     <div class="record-item item-1 scroll-animation">
                         <img src="assets/messi record.webp" alt="Messi Record" class="image">
-                        <div class="middle">
+                        <div class="middle record-cel">
                             <h1>Mas Goles en un año</h1>
                             <p class="ambos">A nivel individual, 2012 fue el gran año de Messi. El astro argentino acumuló a lo largo de esos 365 días la friolera de 91 goles. Una auténtica barbaridad que parece hoy día insuperable, el Argentino hizo 91 goles -en 69 partidos- (2012) con un total de 79 goles en su club (59 en Primera División de España, 13 en la Liga de Campeones de la UEFA, 5 en la Copa del Rey, 2 en la Supercopa de España), y 12 goles en su selección nacional.</p>
-                                <button class="text">Ver Video</button>
+                            <a href="https://youtu.be/jVQxrCQOIf8" class="text" target="blank">Ver video</a>
                         </div>
                     </div>
                     <div class="record-item item-2 scroll-animation">
                         <img src="assets/cristiano record.webp" alt="Cristiano Ronaldo Record" class="image">
-                        <div class="middle">
+                        <div class="middle record-cel">
                             <h1>Maximo goleador Internacional</h1>
-                            <p>Cristiano Ronaldo tiene un récord mundial de 122 goles desde que debutó con Portugal en 2003. También es el jugador que más partidos ha disputado en la historia del fútbol internacional masculino, con 198 encuentros, un récord que compartía con el kuwaití Bader Al-Mutawa. hasta que lo superó el 23 de marzo de 2023 contra Liechtenstein, noche en la que hizo dos goles.                            </p>
-                            <button class="text">Ver Video</button>
+                            <p>Cristiano Ronaldo tiene un récord mundial de 122 goles desde que debutó con Portugal en 2003. También es el jugador que más partidos ha disputado en la historia del fútbol internacional masculino, con 198 encuentros, un récord que compartía con el kuwaití Bader Al-Mutawa. hasta que lo superó el 23 de marzo de 2023 contra Liechtenstein, noche en la que hizo dos goles.</p>
+                            <a href="https://youtu.be/3D-vLxArL4Y" class="text" target="blank">Ver video</a>
                         </div>
                     </div>
                     <div class="record-item item-3 scroll-animation">
                         <img src="assets/mazaropi record.jpeg" alt="Mazaropi record" class="image">
-                        <div class="middle">
+                        <div class="middle mazaropi">
                             <h1>Mayor racha</h1>
                             <p>Geraldo Pereira de Matos Filho ‘Mazarópi’, jugador del Vasco de Gama, fue el guardameta que logró el récord mundial de imbatibilidad. Estuvo un total de 1816 minutos sin encajar ningún gol.</p>
-                            <button class="text">Ver Video</button>
                         </div>
                     </div>
                     <div class="record-item item-1 mauri scroll-animation">
                         <img src="assets/mauricio-baldivieso.jpg" alt="Mauricio Baldiavieso" class="image">
-                        <div class="middle">
+                        <div class="middle mazaropi">
                             <h1>El jugador mas <br> joven en debutar</h1>
                             <p>Con sólo 12 años, Pablo Mauricio Baldivieso Ferrufino se convirtió en el jugador más joven en debutar en la primera división del fútbol boliviano, y quizás a nivel mundial.</p>
-                            <button class="text">Ver Video</button>
+                            <a href="https://youtu.be/7s9UVQzAC9E" class="text" target="blank">Ver video</a>
                         </div>
                     </div>
                     <div class="record-item item-1 paco scroll-animation">
                         <img src="assets/paco gento record.jpg" alt="Paco Gento" class="image">
-                        <div class="middle">
+                        <div class="middle record-cel">
                             <h1>El jugador con <br> mas Champions</h1>
                             <p> Seis Copas de Europa ganó el cántabro con el Real Madrid entre 1956 y 1966, que pudieron incluso ser alguna más. Las plusmarcas están para romperse, y hay quien aspira a ello (Cristiano Ronaldo, que suma cinco Champions), pero nadie podrá arrebatar al presidente de honor del Real Madrid la etiqueta del pionero, el privilegio de ser el primer hombre que piso un territorio que, hasta la fecha, sigue inexplorado por el resto de sus semejantes.</p>
-                            <button class="text">Ver Video</button>
                         </div>
                     </div>
             </div>
         </div>
     </main>
     <footer class=" scroll-animation">
-        <h2 class=" scroll-animation">Fut-History</h2>
-        <hr>
-        <div class="cuadro-footer">.</div>
-        <div class="siguenos-footer">
+        <div class="siguenos-footer siguenos-footer">
             <!-- <i class="fa-brands fa-facebook fa-2xl"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
             <!-- <i class="fa-brands fa-twitter fa-2xl"></i> -->
@@ -235,7 +211,9 @@
             <!-- <i class="fa-brands fa-instagram fa-2xl"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
         </div>
-        <!-- <hr class="divisor-footer"> -->
+        <hr>
+        <div class="cuadro-footer">.</div>
+        <p class="copy">© 2024 Fut History. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/cabecera.js"></script>

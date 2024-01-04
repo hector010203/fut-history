@@ -34,6 +34,10 @@ document.getElementById("bilbao").addEventListener("click", function() {
                   '<p>El Athletic Club ha ganado 8 Ligas españolas y 23 Copas del Rey, consolidándose como uno de los equipos más exitosos en el fútbol nacional. También ha tenido notables participaciones en competiciones internacionales, siendo finalista en la Copa UEFA en dos ocasiones.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
                   '<p>El Athletic Club de Bilbao mantiene una histórica y apasionada rivalidad con el Real Madrid y el FC Barcelona. Los enfrentamientos contra estos clubes son siempre esperados y generan una gran expectación tanto en los jugadores como en los aficionados.</p>' +
+                  '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Barcelona.png" alt="imagen">' +
+                    '<img src="assets/la liga/Real-Madrid.png" alt="imagen">' +
+                  '</div>' +
                 '</div>' +
               '</div>' +
             '</div>',
@@ -81,6 +85,10 @@ document.getElementById("atletico").addEventListener("click", function() {
                   '<p>A lo largo de su historia, el Atlético de Madrid ha ganado numerosos títulos, incluyendo 11 Ligas españolas y 11 Copas del Rey. Además, ha tenido destacadas participaciones en competiciones europeas, siendo campeón de la Copa de Europa (actualmente Liga de Campeones de la UEFA) en la temporada 2021-2022.</p>' +
                   '<h2 class="nombre">Rivales</h2>' +
                   '<p>El Atlético de Madrid mantiene una histórica rivalidad con otros clubes españoles, especialmente con el Real Madrid y el FC Barcelona. Los enfrentamientos contra estos equipos son siempre emocionantes y generan una gran expectación en el fútbol español.</p>' +
+                  '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Barcelona.png" alt="imagen">' +
+                    '<img src="assets/la liga/Real-Madrid.png" alt="imagen">' +
+                  '</div>' +
                 '</div>' +
               '</div>' +
             '</div>',
@@ -126,7 +134,11 @@ document.getElementById("osasuna").addEventListener("click", function() {
                 '<h2 class="nombre">Logros</h2>' +
                 '<p>A lo largo de su historia, Osasuna ha obtenido logros destacables en el fútbol español. El equipo ha participado en competiciones europeas y ha dejado su marca en La Liga.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
-                '<p>Osasuna mantiene rivalidades con otros clubes de la región, como el XXXX y el XXXX. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<p>Osasuna mantiene rivalidades con otros clubes de la región, como el Betis y el Athletic de Bilbao. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Betis.png" alt="imagen">' +
+                    '<img src="assets/la liga/Athletic-club.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -173,7 +185,11 @@ document.getElementById("cadiz").addEventListener("click", function() {
                 '<h2 class="nombre">Logros</h2>' +
                 '<p>A lo largo de su historia, Cádiz ha obtenido logros destacables en el fútbol español. El equipo ha participado en competiciones europeas y ha dejado su marca en La Liga.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
-                '<p>Cádiz mantiene rivalidades con otros clubes de la región, como el XXXX y el XXXX. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<p>Cádiz mantiene rivalidades con otros clubes de la región, como el Betis y el Xeres. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Betis.png" alt="imagen">' +
+                    '<img src="assets/la liga/Xerez.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -220,7 +236,11 @@ document.getElementById("elche").addEventListener("click", function() {
                 '<h2 class="nombre">Logros</h2>' +
                 '<p>A lo largo de su historia, Elche ha obtenido logros destacables en el fútbol español. El equipo ha participado en competiciones europeas y ha dejado su marca en La Liga.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
-                '<p>Elche mantiene rivalidades con otros clubes de la región, como el XXXX y el XXXX. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<p>Elche mantiene rivalidades con otros clubes de la región, como el Hecrules CF y el UCAM Murcia CF. Los enfrentamientos entre estos equipos generan emocionantes encuentros y una intensa competencia.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Hercules.png" alt="imagen">' +
+                    '<img src="assets/la liga/Murcia.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -270,6 +290,9 @@ document.getElementById("barcelona").addEventListener("click", function() {
                 '<p>A lo largo de su historia, el Barcelona ha ganado numerosos títulos, incluyendo La Liga, la Copa del Rey, la Liga de Campeones de la UEFA y el Mundial de Clubes. El club ha dejado una huella imborrable en el fútbol y es reconocido por su estilo de juego atractivo conocido como "tiki-taka".</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>El Barcelona mantiene una intensa rivalidad con el Real Madrid, conocido como "El Clásico". Los partidos entre estos dos equipos son considerados como algunos de los más apasionantes y seguidos en el mundo del fútbol.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Real-Madrid.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -318,6 +341,10 @@ document.getElementById("getafe").addEventListener("click", function() {
                 '<p>Getafe ha logrado destacar en La Liga y ha participado en competiciones europeas como la Europa League. El equipo ha demostrado su capacidad de competir contra equipos más poderosos y ha dejado su huella en el fútbol español.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Getafe mantiene rivalidades regionales con equipos como el Rayo Vallecano y el Leganés. Estos encuentros son seguidos de cerca por los aficionados y generan una gran expectación.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Rayo.png" alt="imagen">' +
+                    '<img src="assets/la liga/Leganes.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -365,6 +392,9 @@ document.getElementById("girona").addEventListener("click", function() {
                 '<p>Girona ha logrado ascender a la Primera División en varias ocasiones y ha dejado su marca en el fútbol español. A pesar de su tamaño y recursos limitados, el equipo ha demostrado su competitividad y ha sido un rival difícil para otros clubes.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Girona mantiene una rivalidad regional con el Club de Fútbol Reus Deportiu, otro equipo de Cataluña. Estos enfrentamientos generan una gran expectación entre los aficionados de ambos clubes.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Reus.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -413,6 +443,9 @@ document.getElementById("rayo").addEventListener("click", function() {
                 '<p>A lo largo de su historia, Rayo Vallecano ha logrado ascender a la Primera División en varias ocasiones y ha dejado su huella en el fútbol español. El equipo ha sido reconocido por su estilo de juego valiente y su espíritu luchador.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Rayo Vallecano mantiene una rivalidad local con el Getafe CF, otro club madrileño. Los enfrentamientos entre estos equipos son conocidos como el "Derbi del Sur de Madrid" y generan una gran pasión entre los aficionados.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Getafe.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -460,6 +493,9 @@ document.getElementById("celta").addEventListener("click", function() {
                 '<p>Celta de Vigo ha tenido participaciones destacadas en la Primera División y ha alcanzado finales de la Copa del Rey. El equipo ha sido reconocido por su estilo de juego atractivo y ha dejado su marca en el fútbol español.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Celta de Vigo mantiene una rivalidad histórica con el Deportivo de La Coruña, otro club gallego. Estos enfrentamientos, conocidos como el "Derbi Gallego", son considerados uno de los derbis más intensos y emocionantes del fútbol español.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Depo Coluña.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -507,6 +543,9 @@ document.getElementById("espanyol").addEventListener("click", function() {
                 '<p>Espanyol ha tenido participaciones destacadas en la Primera División y ha alcanzado finales de la Copa del Rey y competiciones europeas. El equipo ha sido reconocido por su estilo de juego atractivo y su espíritu competitivo.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Espanyol mantiene una histórica rivalidad con el FC Barcelona, otro club de Barcelona. Los enfrentamientos entre ambos equipos, conocidos como el "Derbi Barcelonés", generan una gran expectación y pasión entre los aficionados de ambos clubes.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Barcelona.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -555,6 +594,9 @@ document.getElementById("mallorca").addEventListener("click", function() {
                 '<p>Mallorca ha tenido participaciones destacadas en la Primera División y ha logrado ascender a la máxima categoría en varias ocasiones. El equipo ha dejado su marca en el fútbol español y ha representado a las Islas Baleares con orgullo.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Mallorca mantiene una rivalidad regional con el Real Zaragoza, otro club de España. Estos enfrentamientos generan una gran expectación y pasión entre los aficionados de ambos equipos.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Zaragoza.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -602,6 +644,9 @@ document.getElementById("betis").addEventListener("click", function() {
                 '<p>Real Betis ha tenido participaciones destacadas en la Primera División y ha ganado títulos nacionales e internacionales a lo largo de su historia. El equipo ha dejado su huella en el fútbol español y es uno de los clubes más reconocidos de Andalucía.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Real Betis mantiene una histórica rivalidad con el Sevilla FC, otro club de Sevilla. Estos enfrentamientos, conocidos como el "Derbi Sevillano" o el "Gran Derbi", son considerados uno de los derbis más apasionantes del fútbol español.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Sevilla.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -649,6 +694,9 @@ document.getElementById("villarreal").addEventListener("click", function() {
                 '<p>Villarreal ha tenido participaciones destacadas en la Primera División y ha alcanzado finales de la UEFA Europa League. El equipo ha sido reconocido por su estilo de juego atractivo y su capacidad para competir en el ámbito nacional e internacional.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Villarreal mantiene una rivalidad regional con el Valencia CF, otro club de la Comunidad Valenciana. Estos enfrentamientos, conocidos como el "Derbi de la Comunitat", generan una gran expectación y emoción entre los aficionados de ambos equipos.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Valencia.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -697,6 +745,9 @@ document.getElementById("real-madrid").addEventListener("click", function() {
                 '<p>Real Madrid es uno de los clubes más laureados en la historia del fútbol. Ha ganado numerosos títulos nacionales, incluyendo la Liga española y la Copa del Rey, así como competiciones internacionales como la Liga de Campeones de la UEFA y el Mundial de Clubes. El club ha sido reconocido por su estilo de juego ofensivo y su capacidad para competir en los más altos niveles.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Real Madrid mantiene una histórica rivalidad con el Fútbol Club Barcelona, conocido como "El Clásico". Este enfrentamiento entre los dos clubes más importantes de España genera una gran expectación a nivel mundial y es considerado uno de los derbis más emocionantes y seguidos del fútbol.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                    '<img src="assets/la liga/Barcelona.png" alt="imagen">' +
+                  '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -744,6 +795,9 @@ document.getElementById("real-sociedad").addEventListener("click", function() {
                 '<p>A lo largo de su historia, Real Sociedad ha ganado varios títulos nacionales, incluyendo la Liga española y la Copa del Rey. El club también ha tenido éxito en competiciones europeas, participando en la Liga de Campeones de la UEFA y la Liga Europa. Real Sociedad es conocido por su estilo de juego atractivo y por su capacidad para competir con los mejores equipos de España y Europa.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Real Sociedad mantiene una rivalidad histórica con el Athletic Club, otro club vasco. Los enfrentamientos entre estos dos equipos, conocidos como el "Derbi Vasco" o "Derbi del Norte", generan una gran pasión y rivalidad en la región del País Vasco.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                '<img src="assets/la liga/Athletic-Club.png" alt="imagen">' +
+              '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -792,6 +846,9 @@ document.getElementById("sevilla").addEventListener("click", function() {
                 '<p>Sevilla FC ha ganado varios títulos a lo largo de su historia, incluyendo la Liga española, la Copa del Rey y la Liga Europa de la UEFA. El club ha tenido éxito en competiciones europeas y ha dejado una marca significativa en el fútbol español. Sevilla FC es conocido por su mentalidad ganadora y su espíritu competitivo.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Sevilla FC mantiene una intensa rivalidad con el Real Betis, otro club de la ciudad de Sevilla. Los enfrentamientos entre estos equipos, conocidos como el "Derbi Sevillano", son considerados uno de los derbis más apasionantes y emocionantes de España.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                '<img src="assets/la liga/Betis.png" alt="imagen">' +
+              '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -840,6 +897,9 @@ document.getElementById("almeria").addEventListener("click", function() {
                 '<p>A lo largo de su historia, UD Almería ha logrado varios ascensos a la Primera División española. El club ha competido en la máxima categoría y ha dejado una marca en el fútbol español. Almería ha sido reconocido por su espíritu luchador y su capacidad para desafiar a equipos de mayor categoría.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>UD Almería mantiene una rivalidad local con el Real Murcia, otro club de la región de Andalucía. Los enfrentamientos entre estos equipos son conocidos como el "Derbi del Sureste" y generan gran pasión entre los aficionados de ambos clubes.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                '<img src="assets/la liga/Murcia.png" alt="imagen">' +
+              '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -889,6 +949,9 @@ document.getElementById("valladolid").addEventListener("click", function() {
                 '<p>A lo largo de su historia, Real Valladolid ha logrado ascensos y participaciones destacadas en la Primera División española. El club ha dejado su huella en el fútbol español y ha sido reconocido por su espíritu competitivo y su compromiso con el juego limpio.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Real Valladolid mantiene una rivalidad local con el Real Oviedo, otro club de la región de Castilla y León. Los enfrentamientos entre estos equipos generan gran expectación y pasión entre los aficionados de ambas ciudades.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                '<img src="assets/la liga/Oviedo.png" alt="imagen">' +
+              '</div>' +
               '</div>' +
             '</div>' +
           '</div>',
@@ -938,6 +1001,9 @@ document.getElementById("valencia").addEventListener("click", function() {
                 '<p>A lo largo de su historia, Valencia CF ha ganado varios títulos nacionales e internacionales, incluyendo la Primera División, la Copa del Rey y la Copa de la UEFA. El club ha dejado su huella en el fútbol español y europeo, y ha sido reconocido por su estilo de juego y su afición apasionada.</p>' +
                 '<h2 class="nombre">Rivales</h2>' +
                 '<p>Valencia CF mantiene una intensa rivalidad con el Levante UD, otro club de la ciudad de Valencia. Los enfrentamientos entre estos equipos, conocidos como el "Derbi de Valencia", son considerados uno de los derbis más apasionantes y emocionantes del fútbol español.</p>' +
+                '<div class="image-container-rivales image-container-rivales">' +
+                '<img src="assets/la liga/Levante.png" alt="imagen">' +
+              '</div>' +
               '</div>' +
             '</div>' +
           '</div>',

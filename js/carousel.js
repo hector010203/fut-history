@@ -36,25 +36,17 @@ function App(){}
     }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const contenedor = document.querySelector('.records-colectivos');
-  const video = contenedor.querySelector('.video');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const contenedor = document.querySelector('.records-colectivos');
+//   const video = contenedor.querySelector('.video');
 
-  contenedor.addEventListener('mouseover', function() {
-    video.style.display = 'block';
-    video.play();
-  });
+//   contenedor.addEventListener('mouseover', function() {
+//     video.style.display = 'block';
+//     video.play();
+//   });
 
-  contenedor.addEventListener('mouseout', function() {
-    video.style.display = 'none';
-    video.pause();
-  });
-});
-
-
-document.getElementById("miBoton").addEventListener("click", function() {
-  alert("¡Has hecho clic en el botón!");
-});
-
-
-    
+//   contenedor.addEventListener('mouseout', function() {
+//     video.style.display = 'none';
+//     video.pause();
+//   });
+// });    

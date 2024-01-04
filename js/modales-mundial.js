@@ -86,7 +86,7 @@ document.getElementById("1934").addEventListener("click", function() {
         '<h2>Italia</h2>' +
         '<h2 class="marcador">4-2</h2>' +
         '<h2>Hungría</h2>' +
-        '<img src="assets/hungria.png" alt="">' +
+        '<img src="assets/hungria.jpg" alt="">' +
         '</div>' +
         '<p>La final se disputó el 19 de junio de 1938 en el Estadio Olímpico Yves-du-Manoir en Colombes, Francia. Italia se coronó campeona por segunda vez consecutiva al vencer a Hungría por 4-2 en un emocionante partido que se definió en la prórroga.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
@@ -118,7 +118,7 @@ document.getElementById("1934").addEventListener("click", function() {
         '<p>La Copa Mundial de la FIFA de 1950 se llevó a cabo en Brasil. Fue la cuarta edición del torneo y se caracterizó por el formato de liguilla final, conocido como el "Maracanazo". El torneo es recordado por el sorprendente resultado de la final y la desilusión de la selección brasileña y su afición.</p>' +
         '<h2 class="nombre">Final</h2>' +
         '<div class="partidos-mundial">' +
-        '<img src="assets/uruguay.png" alt="">' +
+        '<img src="assets/urugay.png" alt="">' +
         '<h2>Uruguay</h2>' +
         '<h2 class="marcador">2-1</h2>' +
         '<h2>Brasil</h2>' +
@@ -126,7 +126,7 @@ document.getElementById("1934").addEventListener("click", function() {
         '</div>' +
         '<p>La final se disputó el 16 de julio de 1950 en el Estadio Maracaná en Río de Janeiro, Brasil. Uruguay logró una histórica remontada al vencer a Brasil por 2-1 y consagrarse campeón del mundo por segunda vez en su historia.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
-        '<img src="assets/uruguay.png" alt="">' +
+        '<img src="assets/urugay.png" alt="">' +
         '<h1>Uruguay</h1>' +
         '</div>' +
         '</div>' +
@@ -158,7 +158,7 @@ document.getElementById("1934").addEventListener("click", function() {
         '<h2>Alemania Occidental</h2>' +
         '<h2 class="marcador">3-2</h2>' +
         '<h2>Hungría</h2>' +
-        '<img src="assets/hungria.png" alt="">' +
+        '<img src="assets/hungria.jpg" alt="">' +
         '</div>' +
         '<p>La final se disputó el 4 de julio de 1954 en el Estadio Wankdorf en Berna, Suiza. Alemania Occidental logró una sorprendente victoria al derrotar a Hungría por 3-2 y se coronó campeón del mundo por primera vez en su historia.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
@@ -462,7 +462,7 @@ document.getElementById("1990").addEventListener("click", function() {
         '<div class="contenedor-modal">' +
         '<div class="my-alert-estadios">' +
         '<div class="image-container-estadio">' +
-        '<img src="assets/1990.jpg" alt="Mi Imagen">' +
+        '<img src="assets/1990.jpeg" alt="Mi Imagen">' +
         '</div>' +
         '<div class="contenido-modal">' +
         '<h2 class="nombre">Italia - 1990</h2>' +
@@ -497,7 +497,7 @@ document.getElementById("1990").addEventListener("click", function() {
         '<div class="contenedor-modal">' +
         '<div class="my-alert-estadios">' +
         '<div class="image-container-estadio">' +
-        '<img src="assets/1994.jpg" alt="Mi Imagen">' +
+        '<img src="assets/1994.jpeg" alt="Mi Imagen">' +
         '</div>' +
         '<div class="contenido-modal">' +
         '<h2 class="nombre">Estados Unidos - 1994</h2>' +
@@ -532,14 +532,14 @@ document.getElementById("1998").addEventListener("click", function() {
         '<div class="contenedor-modal">' +
         '<div class="my-alert-estadios">' +
         '<div class="image-container-estadio">' +
-        '<img src="assets/estadios/estadio_1998.jpg" alt="Mi Imagen">' +
+        '<img src="assets/mundial/mundial 1998.jpg" alt="Mi Imagen">' +
         '</div>' +
         '<div class="contenido-modal">' +
         '<h2 class="nombre">Francia - 1998</h2>' +
         '<p>La Copa Mundial de la FIFA de 1998 se llevó a cabo en Francia. Fue la decimosexta edición del torneo y contó con la participación de 32 selecciones nacionales. Este mundial es recordado por la destacada actuación de la selección local y por la consagración de Zinedine Zidane como una figura clave.</p>' +
         '<h2 class="nombre">Final</h2>' +
         '<div class="partidos-mundial">' +
-        '<img src="assets/francia.png" alt="">' +
+        '<img src="assets/francia.webp" alt="">' +
         '<h2>Francia</h2>' +
         '<h2 class="marcador">3-0</h2>' +
         '<h2>Brasil</h2>' +
@@ -547,7 +547,7 @@ document.getElementById("1998").addEventListener("click", function() {
         '</div>' +
         '<p>La final se disputó el 12 de julio de 1998 en el Stade de France en Saint-Denis, Francia. Francia se coronó campeona del mundo por primera vez en su historia al vencer a Brasil por 3-0, con dos goles de Zinedine Zidane y uno de Emmanuel Petit.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
-        '<img src="assets/francia.png" alt="">' +
+        '<img src="assets/francia.webp" alt="">' +
         '<h1>Francia</h1>' +
         '</div>' +
         '</div>' +
@@ -602,7 +602,7 @@ document.getElementById("1998").addEventListener("click", function() {
         '<div class="contenedor-modal">' +
         '<div class="my-alert-estadios">' +
         '<div class="image-container-estadio">' +
-        '<img src="assets/estadios/2006.jpg" alt="Mi Imagen">' +
+        '<img src="assets/2006.jpg" alt="Mi Imagen">' +
         '</div>' +
         '<div class="contenido-modal">' +
         '<h2 class="nombre">Alemania - 2006</h2>' +
@@ -613,7 +613,7 @@ document.getElementById("1998").addEventListener("click", function() {
         '<h2>Italia</h2>' +
         '<h2 class="marcador">1-1 (5-3 penales)</h2>' +
         '<h2>Francia</h2>' +
-        '<img src="assets/francia.png" alt="">' +
+        '<img src="assets/francia.webp" alt="">' +
         '</div>' +
         '<p>La final se disputó el 9 de julio de 2006 en el Estadio Olímpico de Berlín en Berlín, Alemania. Italia se consagró campeona del mundo por cuarta vez al vencer a Francia en la tanda de penales por 5-3, luego de que el partido terminara 1-1 en el tiempo reglamentario y la prórroga.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
@@ -714,7 +714,7 @@ document.getElementById("2018").addEventListener("click", function() {
         '<p>La Copa Mundial de la FIFA de 2018 se llevó a cabo en Rusia. Fue la vigésima primera edición del torneo y contó con la participación de 32 selecciones nacionales. Este mundial se caracterizó por la gran organización del país anfitrión y por la sorprendente actuación de algunas selecciones.</p>' +
         '<h2 class="nombre">Final</h2>' +
         '<div class="partidos-mundial">' +
-        '<img src="assets/francia.png" alt="">' +
+        '<img src="assets/francia.webp" alt="">' +
         '<h2>Francia</h2>' +
         '<h2 class="marcador">4-2</h2>' +
         '<h2>Croacia</h2>' +
@@ -722,7 +722,7 @@ document.getElementById("2018").addEventListener("click", function() {
         '</div>' +
         '<p>La final se disputó el 15 de julio de 2018 en el Estadio Luzhnikí de Moscú, Rusia. Francia se consagró campeona del mundo por segunda vez en su historia al vencer a Croacia por 4-2.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
-        '<img src="assets/francia.png" alt="">' +
+        '<img src="assets/francia.webp" alt="">' +
         '<h1>Francia</h1>' +
         '</div>' +
         '</div>' +
@@ -746,16 +746,16 @@ document.getElementById("2018").addEventListener("click", function() {
         '</div>' +
         '<div class="contenido-modal">' +
         '<h2 class="nombre">Qatar - 2022</h2>' +
-        '<p>La Copa Mundial de la FIFA de 2022 se llevará a cabo en Qatar. Será la vigésima segunda edición del torneo y contará con la participación de 32 selecciones nacionales. Este mundial será histórico, ya que será el primero en jugarse en invierno debido a las altas temperaturas en el país anfitrión.</p>' +
+        '<p>La Copa Mundial de la FIFA Catar 2022 fue la vigésima segunda edición del torneo masculino de fútbol organizado por la FIFA. Celebrado en Catar del 20 de noviembre al 18 de diciembre de 2022, contó con la participación de 32 selecciones nacionales distribuidas en ocho grupos. Considerado por muchos como uno de los mejores torneos de la historia, destacó por su alto nivel de juego y una notable cantidad de goles.</p>' +
         '<h2 class="nombre">Final</h2>' +
         '<div class="partidos-mundial">' +
-        '<img src="assets/francia.png" alt="">' +
-        '<h2>Brasil</h2>' +
+        '<img src="assets/francia.webp" alt="">' +
+        '<h2>Francia</h2>' +
         '<h2 class="marcador">-</h2>' +
         '<h2>Argentina</h2>' +
         '<img src="assets/argentina.png" alt="">' +
         '</div>' +
-        '<p>La final se disputará el día de la final en el Estadio Internacional Khalifa de Lusail, Qatar. Estaremos emocionados por presenciar un enfrentamiento entre dos grandes selecciones de América del Sur.</p>' +
+        '<p>Argentina se enfrentó a Francia, el vigente campeón del mundo. El partido terminó empatado 3-3 en el tiempo reglamentario y la prórroga. En la tanda de penaltis, Argentina ganó 4-2 y se proclamó campeona del mundo por tercera vez en su historia.</p>' +
         '<h2 class="nombre">Ganador</h2>' +
         '<img src="assets/argentina.png" alt="">' +
         '<h1>Por definir</h1>' +

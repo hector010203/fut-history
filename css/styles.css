@@ -9,6 +9,10 @@ html {
     box-sizing: inherit;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 html{
     scroll-behavior: smooth;
@@ -78,6 +82,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header .paginas-header{
@@ -102,6 +107,7 @@ header .enlaces:hover{
     color: #1a1717 !important;
     background-color: white;
 }
+
 
 /* ************************************************************************** */
 /* FOOTER STYLES */
@@ -261,6 +267,10 @@ footer{
     -ms-transform: translate(-50%, -50%)
 }
 
+.item .middle p{
+    text-align: center;
+}
+
 .item:hover .image {
     opacity: 0.3;
 }
@@ -338,6 +348,10 @@ footer{
     text-align:center;
 }
 
+.records .middle p{
+    width: 80%;
+}
+
 .flex-records,
 .flex-records-dt{
     display: flex;
@@ -365,7 +379,7 @@ footer{
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -375,10 +389,10 @@ footer{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
     height: 100%; /* Establece el límite de altura del contenedor de texto */
     width: 100%;
     overflow-y: auto;
@@ -393,9 +407,25 @@ footer{
 .record-item-dt .middle p{
     position: relative;
     top: 0;
-    width: 100%;
+    width: 80%;
 }
-  
+
+.records .record-item,
+.records-dt .record-item-dt{
+    max-width: 977px;
+    max-height: 552px;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 1360px){
+    .records .record-item,
+    .records-dt .record-item-dt{
+        width: 977px;
+        height: 552px;
+        transition: all 0.5s ease;
+    }
+}
+
 
 .record-item:hover .image,
 .record-item-dt:hover .image  {
@@ -666,7 +696,7 @@ header{
 header.sticky{
     /* padding: 5px 100px; */
     /* padding-top: 50px; */
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     /* margin-bottom: -100px; */
     background: #011ea0;
 }
@@ -685,8 +715,6 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* top: -50px; */
-    /* flex-wrap: wrap; */
 }
 
 header ul li{
@@ -719,7 +747,7 @@ header.sticky ul li a{
 }
 
 header .container{
-    margin: 0;
+    /* margin: 0; */
     /* width: 100%; */
 }
 
@@ -727,18 +755,65 @@ header ul{
     position: relative;
     top: 0px;
     margin-left: 60px;
+    
 }
 
+header .navbar-links{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* 
+header .container{
+    margin-top: 20px;
+}
+
+header .logo-header{
+    position: absolute;
+    left: 50px;
+    transition: all 0.5s ease;
+}
+
+header .navbar-links{
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
 header .navbar-toggler{
-    background-color: gray;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    transition: all 0.5s ease;
 }
 
+@media (min-width: 991px){
+    
+header .enlace-logo{
+    margin-top: -130px;
+    transition: all 0.5s ease;
+}
+}
 
-header .navbar-toggler-icon{
-    background-color: gray;
-} */
+@media (min-width: 991px) and (max-width: 1200px) {
+    header .logo-header{
+        position: absolute;
+        left: 0px;
+        transition: all 0.5s ease;
+    }
+
+    header .navbar-links{
+        margin-left: 100px;
+        transition: all 0.5s ease;
+    }
+
+    header .navbar-links .nav-item{
+        margin: -10px;
+        transition: all 0.5s ease;
+    }
+   }
+
+
 
 @media(min-width: 1000px){
     header.sticky{
@@ -834,25 +909,25 @@ header .navbar-toggler-icon{
 @media(max-width: 768px){
     .flex-records .middle h1{
         margin-top: 80px;
-        font-size: 30px !important;
+        font-size: 50px !important;
     }
 
     .flex-records .item-1 .middle h1{
-        margin-top: 300px;
+        margin-top: 380px;
     }
 
     .flex-records .item-2 .middle h1{
-        margin-top: 300px;
+        margin-top: 350px;
         position: relative;
         left: 0;
     }
 
     .flex-records .item-1.mauri h1{
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     .flex-records .item-1.paco h1{
-        margin-top: 350px;
+        /* margin-top: 350px; */
     }
 
     .equipos .carrusel-list{
@@ -889,21 +964,15 @@ header .navbar-toggler-icon{
         position: relative;
         left: -110px;
     }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {   
-    /* header ul li a{
-        position: relative;
-        margin: 0 2px;
-        text-decoration: none;
-        color: #fff !important;
-        letter-spacing: 1px;
-        font-weight: 500px;
-        transition: 0.6s;
-        font-size: 30px !important;
-    } */
-  }
-  
+    .my-alert-2 .estadisticas .barra2{
+        width: 30%;
+    }
+
+    .my-alert-2 .trayectoria{
+        width: 100%;
+    }
+}
 
 /* ALERTAS */
 
@@ -970,6 +1039,7 @@ header .navbar-toggler-icon{
     border-radius: 20px;
     display: inline-block;
     width: 50%;
+    color: #48b34c;
 }
 
 .estadisticas p{
@@ -1027,22 +1097,7 @@ header .navbar-toggler-icon{
     width: 220px;
 } */
   /* Estilos adicionales para adaptarse a responsive */
-  @media (max-width: 768px) {
-    .my-alert {
-      flex-direction: column;
-      align-items: center;
-    }
   
-    .image-container {
-      width: 50%;
-      margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
-    }
-  
-    .contenido-modal {
-      width: 100%;
-    }
-  }
-
   /* MODALES */
 
   .plantilla-laliga{
@@ -1162,26 +1217,66 @@ header .navbar-toggler-icon{
     }
 } */
 
+
+footer{
+    height: 20vh;
+}
+
 .siguenos-footer{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     position: relative;
-    transform: translate(0, -80%);
+    transform: translate(0, -20%);
+}
+
+footer .copy{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    top: 40px;
+}
+footer .cuadro-footer{
+    width: 70px;
+    background-color: white;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
 }
 
 .siguenos-footer svg{
     background-color: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     fill: #011ea0;
-    margin-right: 10px;
+    margin: 0 20px;
     border: thin solid white;
 }
 
 .siguenos-footer :nth-child(2),
 .siguenos-footer :nth-child(3){
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 7px;
     fill: white;
     background-color: #011ea0;
@@ -1212,41 +1307,14 @@ header .navbar-toggler-icon{
     background-color: #1a1717;
 }
 
-footer{
-    height: 30vh;
-}
-
 footer h2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     font-size: 40px !important;
     position: relative;
     top: 10px;
     /* font-family: 'Lilita One', cursive !important; */
-}
-
-footer hr{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #fff;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-}
-footer .cuadro-footer{
-    width: 70px;
-    background-color: white;
-    z-index: 999;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -20px;
-    border-radius: 5px;
 }
 
 footer .divisor-footer{
@@ -1345,6 +1413,20 @@ footer .divisor-footer{
     /* display: inline-block; */
     width: 800px;
     text-align: center;
+  }
+
+  .record-grup-0 .img-record{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+  }
+
+  .record-grup-0 .img-record img:nth-child(2){
+    width: 280px !important;
+  }
+
+  .record-grup-0 .img-record img{
+    border-radius: 10px;
   }
 
   .records-individuales,
@@ -1448,3 +1530,552 @@ footer .divisor-footer{
     margin-bottom: 50px;
     margin-top: 50px;
   }
+
+  .my-alert-2 .image-container-plantilla{
+    height: 300px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-alert-2 .image-container-plantilla img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .my-alert-2 .image-container-rivales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .my-alert-2 .image-container-rivales img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .my-alert-2 .image-container-rivales :first-child{
+    margin-right: 50px;
+  }
+
+  .record-item a{
+    text-decoration: none;
+  }
+
+  .dt-top .middle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dt-top .middle p{
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .my-alert {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 50%;
+      margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+    }
+  
+    .contenido-modal {
+      width: 100%;
+    }
+    
+    .libros-dt .galeria-img{
+        width: 100%;
+    }
+
+    .my-alert-2 .contenido-modal .trayectoria{
+        width: 100%;
+        left: 0%;
+    }
+  }
+
+
+    @media(max-width: 991px){
+        header .logo-header{
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            width: 70px;
+            height: 70px;
+        }
+    
+        header.sticky{
+            padding-bottom: 50px;
+            transition: all 0.5s ease;
+        }
+    }
+
+
+    .contenedor-modal {
+        overflow-y: scroll;
+        /* max-height: 400px; */
+        scrollbar-width: thin;
+        scrollbar-color: #888 transparent;
+    }
+    
+    /* Estilo para navegadores basados en WebKit (Chrome, Safari) y Edge */
+    .contenedor-modal::-webkit-scrollbar {
+        width: 12px;
+        
+    }
+    
+    .contenedor-modal::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 6px;
+    }
+    
+    /* Estilo para Firefox */
+    .contenedor-modal {
+        scrollbar-width: thin;
+        scrollbar-color: #888 transparent;
+    }
+
+    /* BOTON DE CIERRE DE SWEETALERT */
+.swal2-popup .swal2-close {
+    margin-bottom: -10px;
+    margin-right: 10px;
+}
+
+.cuadro-records img{
+    max-width: 90%;
+    height: auto;
+    margin-right: 0;
+}
+.cuadro-records{
+    text-align: center;
+}
+
+.flecha{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+    color: white;
+    fill: white;
+    fill: #011ea0;
+    background-image: radial-gradient(ellipse 70px 70px, white 20%,#011ea0 55% 90%, white 81%);
+    border-radius: 100%;
+    /* border: thick solid #011ea0; */
+    transition: all 0.3s ease-out;
+}
+
+.flecha:hover{
+    cursor: pointer;
+    /* fill: #011ea5; */
+        transform: scale(1.1,1.1);
+    transition: all 0.5s ease;
+}
+
+.flecha2{
+    fill: white;
+    background-image: radial-gradient(ellipse 70px 70px, #011ea0 20%,white 55% 90%, #011ea0 81%);
+}
+
+.visible{
+    opacity: 0;
+    visibility: hidden;
+    order: 1;
+}
+
+@media(max-width: 850px){
+    .records .middle h1{
+        font-size: 50px !important;
+    }
+}
+
+
+@media(max-width: 770px){
+
+    .contenido-modal .image-container-plantilla{
+        width: 100%;
+        height: 270px;
+    }
+
+    .contenido-modal .image-container-estadio{
+        width: 100%;
+    }
+
+
+    .flecha:hover{
+        transform: none;
+        transition: all 0.5s ease;
+        z-index: 999;
+    }
+
+    .container-main .textos-records{
+        text-align: center;
+        width: 70%;
+    }
+
+    .mundiales h1{
+        text-align: center;
+    }
+
+    .container-main .records-individuales,
+    .container-main .records-grupales{
+        text-align: center;
+        width: 80%;
+    }
+
+
+    .records .middle h1{
+        margin-top: 10% !important;
+        font-size: 35px !important;
+    }
+
+    .records .middle p{
+        font-size: 14px !important;
+    }
+
+    .records-dt .middle h1{
+        margin-top: 50px;
+        font-size: 30px !important;
+    }
+
+    .record-item-dt p{
+        font-size: 15px !important;
+    }
+
+    .libros-dt .galeria-img{
+        width: 80%;
+    }
+}
+
+@media( min-width: 460px) and (max-width: 770px){
+    .contenido-modal .image-container-plantilla{
+        width: 100%;
+        height: 300px;
+    }
+
+    .contenido-modal .image-container-estadio{
+        width: 100%;
+    }
+}
+
+@media( min-width: 530px) and (max-width: 770px){
+    .contenido-modal .image-container-plantilla{
+        width: 80%;
+        height: 300px;
+    }
+
+    .contenido-modal .image-container-estadio{
+        width: 80%;
+    }
+}
+
+@media( min-width: 650px) and (max-width: 770px){
+    .contenido-modal .image-container-plantilla{
+        width: 70%;
+        height: 330px;
+    }
+
+    .contenido-modal .image-container-estadio{
+        width: 70%;
+    }
+}
+
+
+
+
+@media(max-width: 520px){
+    .records .record-cel h1{
+        margin-top: 20% !important;
+    }
+
+    .records .mazaropi h1{
+        font-size: 20px !important;
+    }
+
+    .record-item-dt h1{
+        margin-top: 10% !important;
+    }
+    
+    .dt-top p{
+        margin-top: 20px !important;
+        font-size: 18px !important;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 620px){
+    .estadio-top .middle h1{
+        font-size: 40px !important;
+    }
+}
+
+
+@media(max-width: 480px){
+    .records .record-cel h1{
+        margin-top: 30% !important;
+        font-size: 30px !important;
+    }
+    
+    .records .mazaropi h1{
+        font-size: 30px !important;
+    }
+}
+
+
+@media(max-width: 460px){
+
+    .container-main .records-individuales.ver-1,
+    .container-main .records-grupales.ver-1{
+        text-align: center;
+        font-size: 40px !important;
+    }
+}
+
+
+@media(max-width: 440px){
+    .records .record-cel h1{
+        margin-top: 40% !important;
+        font-size: 27px !important;
+    }
+    
+    .records .mazaropi h1{
+        font-size: 27px !important;
+    }
+
+    .jugadores-top p{
+        margin-top: 5px !important;
+        font-size: 18px !important;
+    }
+
+    .record-item-dt h1{
+        text-align: center;
+        margin-top: 20% !important;
+        font-size: 30px !important;
+    }
+
+    .record-item-dt .dt-cel h1{
+        margin-top: 30% !important;
+    }
+    
+    .record-item-dt p{
+        font-size: 15px !important;
+    }
+
+    .estadio-top .middle h1{
+        font-size: 30px !important;
+    }
+
+    .estadio-top .middle button{
+        padding: 5px;
+    }
+}
+
+@media(max-width: 410px){
+
+    /* .container-main .separacion-records{
+        width: 100%;
+    } */
+    .records .record-cel h1{
+        margin-top: 60% !important;
+        font-size: 20px !important;
+    }
+
+    .records .mazaropi h1{
+        font-size: 20px !important;
+    }
+
+    .jugadores-top p{
+        margin-top: 5px !important;
+        font-size: 18px !important;
+    }
+
+    .record-item-dt .dt-cel h1{
+        text-align: center;
+        margin-top: 40% !important;
+    }
+    
+}
+
+@media(max-width: 390px){
+    .record-item-dt h1{
+        text-align: center;
+        margin-top: 25% !important;
+    }
+
+    .record-item-dt .dt-cel h1{
+        text-align: center;
+        margin-top: 40% !important;
+    }
+}
+
+@media(max-width: 360px){
+    h1{
+        font-size: 60px !important;
+    }
+
+    .destacados{
+        margin-bottom: 30px;
+    }
+
+    .records .record-cel h1{
+        margin-top: 52% !important;
+        font-size: 22px !important;
+    }
+
+    .records .mazaropi h1{
+        font-size: 22px !important;
+    }
+
+    .records .record-cel p{
+        font-size: 12px !important;
+    }
+
+    .jugadores-top button{
+        padding: 5px !important;
+    }
+
+    .jugadores-top p{
+        margin-top: 10px !important;
+        font-size: 15px !important;
+    }
+
+    .record-item-dt h1{
+        text-align: center;
+        margin-top: 40% !important;
+        font-size: 25px !important;
+    }
+
+    .record-item-dt .dt-cel h1{
+        text-align: center;
+        margin-top: 50% !important;
+    }
+}
+
+@media(max-width: 320px){
+
+    .records .record-cel h1{
+        margin-top: 60% !important;
+        font-size: 22px !important;
+    }
+
+    .records .mazaropi h1{
+        margin-top: 30% !important;
+        font-size: 22px !important;
+    }
+
+    .records .record-cel p{
+        font-size: 12px !important;
+    }
+
+    .record-item-dt h1{
+        text-align: center;
+        margin-top: 60% !important;
+        font-size: 25px !important;
+    }
+
+    .record-item-dt .dt-cel h1{
+        text-align: center;
+        margin-top: 80% !important;
+    }
+}
+
+@media(max-width: 1250px){
+    .carousel-equipos{
+        width: 70% !important;
+    }
+}
+
+/* footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+footer img{
+    width: 150px;
+    height: 150px;
+}
+
+footer .sobre-nosotros{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer h2{
+    font-size: 25px;
+}
+
+footer p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+*/
+
+@media(max-width: 520px){
+    footer{
+        height: 30vh;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    footer hr{
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 270px){
+    footer{
+        height: 40vh;
+    }
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 990;
+    opacity: 0.5;
+  }
+  
+  .loader-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 8px solid #011ea0;
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    z-index: 999 !important;
+    opacity: 1 !important;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  body.loading {
+    overflow: hidden;
+    pointer-events: none !important;
+  }
+  
